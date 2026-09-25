@@ -2511,6 +2511,8 @@ LISTEN CLOSELY
 
     position: relative;
 
+    left: 7%;
+
     width: 88%;
 
     margin: 0 auto;
@@ -2521,7 +2523,7 @@ LISTEN CLOSELY
 
 .mamah-daily-image {
 
-    width: 100%;
+    width: 85%;
 
     height: auto;
 
@@ -2582,7 +2584,7 @@ LISTEN CLOSELY
 }
 
 
-/* FOTO MAMAH */
+/* FOTO mbak */
 
 .favorite-character img {
 
@@ -2597,7 +2599,7 @@ LISTEN CLOSELY
     transform: translateX(-50%);
 
     /* BESARKAN FOTO */
-    width: 168%;
+    width: 101%;
 
     max-width: none;
 
@@ -2635,7 +2637,7 @@ LISTEN CLOSELY
     transform: translateX(-50%);
 
     /* BESARKAN FOTO */
-    width: 160%;
+    width: 93%;
 
     max-width: none;
 
@@ -2918,6 +2920,8 @@ LISTEN CLOSELY
 
     position: relative;
 
+    left: 7%;
+
     width: 88%;
 
     margin: 0 auto;
@@ -2928,7 +2932,7 @@ LISTEN CLOSELY
 
 .mbak-daily-image {
 
-    width: 100%;
+    width: 85%;
 
     height: auto;
 
@@ -3288,6 +3292,8 @@ LISTEN CLOSELY
 
     position: relative;
 
+    left: 7%;
+
     width: 88%;
 
     margin: 0 auto;
@@ -3298,7 +3304,7 @@ LISTEN CLOSELY
 
 .abang-daily-image {
 
-    width: 100%;
+    width: 85%;
 
     height: auto;
 
@@ -3330,7 +3336,7 @@ LISTEN CLOSELY
 
     align-items: flex-start;
 
-    padding: 20px;
+    padding: 15px;
 
     box-sizing: border-box;
 
@@ -3347,7 +3353,7 @@ LISTEN CLOSELY
    FAVORITE CHARACTER
 ========================================= */
 
-.favorite-character {
+.favorite-character-abang {
     position: relative;
 
     width: 43%;
@@ -3361,7 +3367,7 @@ LISTEN CLOSELY
 
 /* FOTO ABANG */
 
-.favorite-character img {
+.favorite-character-abang img {
 
     position: absolute;
 
@@ -3374,7 +3380,7 @@ LISTEN CLOSELY
     transform: translateX(-50%);
 
     /* BESARKAN FOTO */
-    width: 156%;
+    width: 100%;
 
     max-width: none;
 
