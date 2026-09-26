@@ -3216,9 +3216,10 @@ LISTEN CLOSELY
    FAVORITE CONTENT
 ========================================= */
 
+
 .favorite-content {
 
-    width: 57%;
+    width: 50%;
 
     padding: 20px 10px 10px 10px;
 
@@ -3232,7 +3233,7 @@ LISTEN CLOSELY
 
     font-family: Kindergarten, cursive;
 
-    font-size: 45px;
+    font-size: 30px;
 
     line-height: 0.95;
 
@@ -3252,12 +3253,12 @@ LISTEN CLOSELY
 
     font-family: Kindergarten, cursive;
 
-    font-size: 25px;
+    font-size: 15px;
 
     line-height: 1.05;
 
     color: white;
-
+    
     text-align: justify;
 }
 
@@ -3268,8 +3269,6 @@ LISTEN CLOSELY
 
     margin-bottom: 10px;
 }
-
-
 
 
 /* =========================================
@@ -3640,7 +3639,7 @@ LISTEN CLOSELY
 
 .favorite-content {
 
-    width: 57%;
+    width: 50%;
 
     padding: 20px 10px 10px 10px;
 
@@ -3654,7 +3653,7 @@ LISTEN CLOSELY
 
     font-family: Kindergarten, cursive;
 
-    font-size: 45px;
+    font-size: 30px;
 
     line-height: 0.95;
 
@@ -3674,12 +3673,12 @@ LISTEN CLOSELY
 
     font-family: Kindergarten, cursive;
 
-    font-size: 25px;
+    font-size: 15px;
 
     line-height: 1.05;
 
     color: white;
-
+    
     text-align: justify;
 }
 
@@ -4175,7 +4174,12 @@ img {
 /* =========================
    GLOBAL FLUID VALUES
 ========================= */
-.header,
+.header {
+    /* Keep the original full-width header.
+       The side padding below creates the mobile margins. */
+    width: 100%;
+}
+
 .echoed-header,
 .listen-header,
 .memoirs-header {
@@ -4995,5 +4999,942 @@ img {
 
     .quote-section {
         height: 160px;
+    }
+}
+
+/* =========================================================
+   FINAL PHONE FIX — CLOSING BOX / BOTTOM NAVIGATION
+   Prevent closing text from becoming oversized and covering
+   the home + next buttons on small screens.
+========================================================= */
+@media (max-width: 600px) {
+    .closing-box,
+    .permission-closing {
+        width: min(80%, 520px);
+        max-width: calc(100% - 100px);
+        min-height: 0;
+        height: auto;
+        margin: clamp(22px, 5vw, 35px) auto 70px;
+        padding: 24px 18px;
+        border-radius: 22px;
+        box-sizing: border-box;
+    }
+
+    .closing-box p,
+    .permission-closing p {
+        width: 100%;
+        margin: 0;
+        font-size: clamp(24px, 6vw, 29px);
+        line-height: 1.08;
+        letter-spacing: .5px;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .bottom-navigation {
+        width: 100%;
+        height: 70px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .listen-home {
+        left: 30px;
+        bottom: -5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-next {
+        right: 30px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .closing-box,
+    .permission-closing {
+        width: 76%;
+        max-width: calc(100% - 90px);
+        margin-bottom: 65px;
+        padding: 20px 15px;
+    }
+
+    .closing-box p,
+    .permission-closing p {
+        font-size: clamp(21px, 6vw, 25px);
+        line-height: 1.08;
+    }
+
+    .listen-home {
+        left: 26px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .nav-next {
+        right: 26px;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE BIO PAGES FIX — DAILY IMAGE + FAVORITE CHARACTER
+   Keep daily.gif wide and make the character image fill the
+   favorite area again on phone screens.
+========================================================= */
+@media (max-width: 600px) {
+    /* DAILY IMAGE: use the full available content width */
+    .mamah-photo-section,
+    .mbak-photo-section,
+    .abang-photo-section {
+        position: relative;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .mamah-daily-image,
+    .mbak-daily-image,
+    .abang-daily-image {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* FAVORITE BOX: keep it close to / overlapping the daily image */
+    .favorite-box,
+    .favorite-box-mbak {
+        left: 3%;
+        right: 3%;
+        width: auto;
+        bottom: 70px;
+        min-height: 330px;
+        padding: 10px;
+        gap: 3px;
+        overflow: visible;
+    }
+
+    /* Character area */
+    .favorite-character,
+    .favorite-character-mamah,
+    .favorite-character-mbak,
+    .favorite-character-abang {
+        width: 43%;
+        min-width: 0;
+        height: 100%;
+        overflow: visible;
+    }
+
+    /* Restore the larger character proportions on mobile.
+       The transparent space inside the PNG makes 100% look
+       much smaller than the original desktop design. */
+    .favorite-character img,
+    .favorite-character-mamah img,
+    .favorite-character-abang img {
+        width: 135%;
+        max-width: none;
+        height: auto;
+    }
+
+    .favorite-character-mbak img {
+        width: 165%;
+        max-width: none;
+        height: auto;
+    }
+
+    /* Keep the character in front of the decoration */
+    .favorite-character img,
+    .favorite-character-mamah img,
+    .favorite-character-mbak img,
+    .favorite-character-abang img {
+        z-index: 4;
+    }
+
+    .favorite-content {
+        width: 57%;
+        min-width: 0;
+        padding: 8px 4px 6px;
+    }
+}
+
+@media (max-width: 380px) {
+    .favorite-box,
+    .favorite-box-mbak {
+        bottom: 65px;
+        min-height: 300px;
+        padding: 8px;
+        gap: 2px;
+    }
+
+    .favorite-character img,
+    .favorite-character-mamah img,
+    .favorite-character-abang img {
+        width: 140%;
+    }
+
+    .favorite-character-mbak img {
+        width: 170%;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE V5 — UNIVERSAL DEVICE OVERRIDES
+   Target: desktop, laptop, tablet, portrait/landscape phones.
+   This block intentionally comes last so it wins over older
+   fixed-size responsive rules without changing HTML classes.
+========================================================= */
+
+:root {
+    --page-gutter: clamp(12px, 4vw, 72px);
+    --content-max: 1100px;
+    --radius-fluid: clamp(18px, 3vw, 38px);
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    min-width: 0;
+    overflow-x: clip;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+img,
+video {
+    height: auto;
+}
+
+/* Prevent long words/URLs from forcing horizontal scrolling. */
+h1, h2, h3, p, li, a, span {
+    overflow-wrap: anywhere;
+}
+
+/* Main desktop containers stay centered and fluid. */
+.menu-section,
+.quote-section,
+.echoed-header,
+.listen-header,
+.memoirs-header,
+.memoirs-container,
+.mamah-container,
+.mbak-container,
+.abang-container,
+.regulation-box,
+.closing-box,
+.page-navigation,
+.page-navigation-bio {
+    max-width: var(--content-max);
+}
+
+.header {
+    padding-left: var(--page-gutter);
+    padding-right: var(--page-gutter);
+}
+
+.header-content {
+    max-width: var(--content-max);
+    margin-inline: auto;
+}
+
+/* Home menu: keep desktop composition but avoid viewport-height clipping. */
+.menu-section {
+    min-height: clamp(680px, 78svh, 1100px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: 1100px;
+    border-radius: var(--radius-fluid);
+}
+
+.menu {
+    gap: clamp(18px, 4vw, 65px);
+}
+
+.menu-button {
+    min-height: clamp(64px, 8vw, 105px);
+    border-radius: clamp(18px, 3vw, 30px);
+}
+
+.quote-section {
+    min-height: clamp(170px, 22vw, 240px);
+    height: auto;
+    border-radius: var(--radius-fluid);
+}
+
+.echoed-title,
+.listen-title,
+.memoirs-title h1,
+.family-title {
+    max-width: 100%;
+}
+
+.echoed-story,
+.regulation-box,
+.closing-box,
+.memoirs-story,
+.favorite-box,
+.favorite-box-mbak {
+    max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .echoed-header,
+    .listen-header,
+    .memoirs-header,
+    .menu-section,
+    .quote-section,
+    .memoirs-container,
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        width: calc(100% - 2 * var(--page-gutter));
+    }
+
+    .echoed-title,
+    .listen-title {
+        font-size: clamp(42px, 8vw, 76px);
+    }
+
+    .memoirs-title h1 {
+        font-size: clamp(38px, 7vw, 60px);
+    }
+}
+
+/* Phones: switch fragile absolute layouts into normal document flow. */
+@media (max-width: 600px) {
+    :root {
+        --page-gutter: clamp(12px, 4vw, 20px);
+    }
+
+    body {
+        min-height: 100dvh;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+
+    .header-content {
+        min-height: 0;
+        padding: 18px 16px;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .welcome h1 {
+        font-size: clamp(30px, 12vw, 52px);
+        line-height: .95;
+    }
+
+    .welcome p {
+        margin-top: 10px;
+        font-size: clamp(10px, 3.5vw, 14px);
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        width: clamp(72px, 24vw, 110px);
+        max-width: 30%;
+    }
+
+    /* Menu no longer relies on absolute centering or a hard-coded height. */
+    .menu-section {
+        width: calc(100% - 2 * var(--page-gutter));
+        min-height: 0;
+        height: auto;
+        max-height: none;
+        aspect-ratio: auto;
+        padding: clamp(64px, 18vw, 92px) 0;
+        overflow: hidden;
+    }
+
+    .menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: min(84%, 430px);
+        margin-inline: auto;
+        gap: clamp(18px, 6vw, 28px);
+    }
+
+    .menu-button {
+        min-height: 62px;
+        padding: 13px 14px;
+        font-size: clamp(20px, 7.5vw, 31px);
+        line-height: 1.05;
+    }
+
+    .quote-section {
+        width: calc(100% - 2 * var(--page-gutter));
+        min-height: 165px;
+        padding-block: 18px;
+    }
+
+    .quote-slider {
+        width: calc(100% - 88px);
+        min-width: 0;
+    }
+
+    .quote-slide p {
+        font-size: clamp(20px, 7.5vw, 32px);
+        line-height: 1;
+    }
+
+    .slider-arrow {
+        width: 42px;
+        height: 70px;
+        font-size: clamp(46px, 14vw, 60px);
+    }
+
+    .left-arrow { left: 4px; }
+    .right-arrow { right: 4px; }
+
+    /* Generic inner-page headers */
+    .echoed-header,
+    .listen-header,
+    .memoirs-header {
+        width: calc(100% - 2 * var(--page-gutter));
+        min-height: 100px;
+        height: auto;
+        margin: 20px auto 26px;
+        padding: 18px 16px;
+    }
+
+    .echoed-title,
+    .listen-title,
+    .memoirs-title h1 {
+        font-size: clamp(30px, 10vw, 48px);
+        line-height: .98;
+    }
+
+    .echoed-main {
+        padding-inline: var(--page-gutter);
+    }
+
+    .echoed-story {
+        width: 100%;
+        padding: 18px 16px;
+        font-size: clamp(13px, 3.8vw, 16px);
+        line-height: 1.35;
+        text-align: left;
+    }
+
+    .section-title,
+    .regulation-box,
+    .closing-box,
+    .permission-closing,
+    .page-navigation {
+        width: calc(100% - 2 * var(--page-gutter));
+        max-width: none;
+    }
+
+    .section-title {
+        min-height: 64px;
+        margin-bottom: 24px;
+        padding: 12px;
+        font-size: clamp(28px, 9vw, 42px);
+    }
+
+    .regulation-box {
+        padding: 18px 16px 20px;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .regulation-box ol,
+    .permission-box ol {
+        padding-left: 24px;
+    }
+
+    .closing-box,
+    .permission-closing {
+        min-height: 0;
+        height: auto;
+        margin: 26px auto 56px;
+        padding: 22px 18px;
+    }
+
+    .closing-box p,
+    .permission-closing p {
+        font-size: clamp(22px, 7vw, 30px);
+    }
+
+    /* Biography/family page: remove hard-coded 980–1430px canvases. */
+    .memoirs-container,
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        width: calc(100% - 2 * var(--page-gutter));
+        min-height: 0;
+        height: auto;
+        padding: 18px 12px 28px;
+        overflow: hidden;
+    }
+
+    .family-title {
+        font-size: clamp(32px, 10vw, 46px);
+        margin-bottom: 18px;
+    }
+
+    .character,
+    .character-talia,
+    .character-manda,
+    .character-bara {
+        position: relative;
+        inset: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: min(68vw, 250px);
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .character-manda,
+    .character-bara {
+        width: min(52vw, 200px);
+    }
+
+    .character-button {
+        width: min(78vw, 210px);
+        max-width: 100%;
+        margin-top: -28px;
+        font-size: clamp(18px, 6vw, 25px);
+    }
+
+    .memoirs-story {
+        position: relative;
+        inset: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        margin: 18px auto 0;
+        padding: 16px;
+    }
+
+    .memoirs-story h2 {
+        font-size: clamp(26px, 8vw, 36px);
+    }
+
+    .memoirs-story p {
+        font-size: clamp(13px, 4vw, 16px);
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    /* Daily-photo bio pages */
+    .mamah-photo-section,
+    .mbak-photo-section,
+    .abang-photo-section {
+        position: relative;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 16px;
+    }
+
+    .mamah-daily-image,
+    .mbak-daily-image,
+    .abang-daily-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .favorite-box,
+    .favorite-box-mbak {
+        position: relative;
+        inset: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        height: auto;
+        margin: 0 auto;
+        padding: 14px 12px;
+        display: grid;
+        grid-template-columns: minmax(95px, 40%) minmax(0, 60%);
+        align-items: center;
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    .favorite-character,
+    .favorite-character-mamah,
+    .favorite-character-mbak,
+    .favorite-character-abang {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        align-self: center;
+    }
+
+    .favorite-character img,
+    .favorite-character-mamah img,
+    .favorite-character-mbak img,
+    .favorite-character-abang img {
+        position: relative;
+        inset: auto;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .favorite-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 6px 2px;
+    }
+
+    .favorite-content h2 {
+        font-size: clamp(20px, 7vw, 30px);
+    }
+
+    .favorite-content ol {
+        font-size: clamp(11px, 3.6vw, 15px);
+        line-height: 1.3;
+        padding-left: 18px;
+    }
+
+    .love-decoration-bio,
+    .love-decoration-bio1,
+    .love-decoration-bio2,
+    .love-decoration-bio3,
+    .love-decoration-bio4,
+    .love-decoration-bio5 {
+        max-width: 44%;
+    }
+
+    /* Navigation stays tappable and away from the viewport edges. */
+    .bottom-navigation,
+    .bottom-navigation-bio {
+        min-height: 64px;
+        height: auto;
+        margin-top: 18px;
+    }
+
+    .listen-home,
+    .nav-next,
+    .nav-back,
+    .nav-back-bio,
+    .moirs-home,
+    .biography-home {
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer {
+        min-height: 68px;
+        padding: 16px var(--page-gutter);
+    }
+
+    .footer p {
+        font-size: clamp(12px, 3.5vw, 14px);
+    }
+}
+
+/* Very narrow phones (320–380 px). */
+@media (max-width: 380px) {
+    .header-content {
+        padding: 14px 12px;
+    }
+
+    .welcome h1 {
+        font-size: clamp(28px, 11vw, 38px);
+    }
+
+    .logo {
+        width: 68px;
+    }
+
+    .menu-section {
+        padding-block: 48px;
+    }
+
+    .menu {
+        width: 88%;
+        gap: 16px;
+    }
+
+    .menu-button {
+        min-height: 56px;
+        font-size: clamp(18px, 7vw, 24px);
+    }
+
+    .favorite-box,
+    .favorite-box-mbak {
+        grid-template-columns: minmax(82px, 38%) minmax(0, 62%);
+        padding: 10px 8px;
+    }
+}
+
+/* Landscape phones: avoid giant vertical sections. */
+@media (max-width: 900px) and (max-height: 520px) and (orientation: landscape) {
+    .menu-section {
+        min-height: 0;
+        padding-block: 34px;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    .menu-button {
+        min-height: 50px;
+        font-size: clamp(18px, 4vw, 24px);
+    }
+
+    .quote-section {
+        min-height: 145px;
+    }
+}
+
+/* Respect users who disable motion. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================================
+   FINAL FOOTER FIX — FULL WIDTH FOR MEMOIR / BIOGRAPHY PAGES
+   Makes memoir biography, Mamah Talia, Mbak Manda, and Abang Bara
+   use the same long footer style as the other pages.
+========================================================= */
+
+.memoirs-page .footer,
+.mamah-page .footer,
+.mbak-page .footer,
+.abang-page .footer,
+.footer {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+}
+
+.memoirs-page .footer p,
+.mamah-page .footer p,
+.mbak-page .footer p,
+.abang-page .footer p,
+.footer p {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .memoirs-page .footer,
+    .mamah-page .footer,
+    .mbak-page .footer,
+    .abang-page .footer,
+    .footer {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+    }
+}
+
+/* =========================================================
+   FINAL BIOGRAPHY NAVIGATION FIX
+   Memoir Biography / Mamah Talia / Mbak Manda / Abang Bara
+   Keeps HOME + NEXT/BACK visible on every device.
+========================================================= */
+
+.page-navigation-bio,
+.bottom-navigation-bio {
+    overflow: visible !important;
+    position: relative;
+    z-index: 500;
+}
+
+/* Ensure all biography navigation controls can never be hidden. */
+.moirs-home,
+.biography-home,
+.nav-back-bio,
+.nav-next-bio {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 999 !important;
+}
+
+/* NEXT button support, in case biography HTML uses nav-next-bio. */
+.nav-next-bio {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-next-bio span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 8px;
+    top: 7px;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 31px solid var(--orange);
+    pointer-events: none;
+}
+
+.nav-next-bio:hover {
+    transform: translateY(-50%) translateX(5px);
+}
+
+/* Tablet and phone: navigation becomes a normal row instead of
+   depending on large negative/absolute bottom offsets. */
+@media (max-width: 900px) {
+    .page-navigation-bio {
+        width: calc(100% - 2 * var(--page-gutter, 16px));
+        max-width: none;
+        min-height: 72px;
+        margin: 14px auto 24px;
+        position: relative;
+        overflow: visible !important;
+        z-index: 800;
+    }
+
+    .bottom-navigation-bio {
+        width: 100%;
+        min-height: 64px;
+        height: 64px;
+        margin: 0;
+        position: relative;
+        overflow: visible !important;
+        z-index: 800;
+    }
+
+    /* HOME: anchor safely to the left side of the navigation row. */
+    .bottom-navigation-bio .moirs-home,
+    .bottom-navigation-bio .biography-home,
+    .page-navigation-bio .moirs-home,
+    .page-navigation-bio .biography-home {
+        position: absolute !important;
+        left: 8px !important;
+        right: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+    }
+
+    /* NEXT/BACK: anchor safely to the right side. */
+    .bottom-navigation-bio .nav-back-bio,
+    .bottom-navigation-bio .nav-next-bio,
+    .page-navigation-bio .nav-back-bio,
+    .page-navigation-bio .nav-next-bio {
+        position: absolute !important;
+        left: auto !important;
+        right: 8px !important;
+        top: 50% !important;
+        bottom: auto !important;
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+    }
+
+    /* If HOME is placed outside the navigation wrapper in older HTML,
+       keep its old structure usable without sending it outside the screen. */
+    .memoirs-container > .moirs-home,
+    .memoirs-container > .biography-home,
+    .mamah-container > .moirs-home,
+    .mamah-container > .biography-home,
+    .mbak-container > .moirs-home,
+    .mbak-container > .biography-home,
+    .abang-container > .moirs-home,
+    .abang-container > .biography-home {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        display: block !important;
+        width: 48px !important;
+        height: 48px !important;
+        margin: 20px 0 4px 8px !important;
+        transform: none !important;
+    }
+
+    /* If the arrow is directly inside a biography container. */
+    .memoirs-container > .nav-back-bio,
+    .memoirs-container > .nav-next-bio,
+    .mamah-container > .nav-back-bio,
+    .mamah-container > .nav-next-bio,
+    .mbak-container > .nav-back-bio,
+    .mbak-container > .nav-next-bio,
+    .abang-container > .nav-back-bio,
+    .abang-container > .nav-next-bio {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        float: right;
+        width: 48px !important;
+        height: 48px !important;
+        margin: -52px 8px 4px auto !important;
+        transform: none !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .bottom-navigation-bio .moirs-home,
+    .bottom-navigation-bio .biography-home,
+    .bottom-navigation-bio .nav-back-bio,
+    .bottom-navigation-bio .nav-next-bio,
+    .page-navigation-bio .moirs-home,
+    .page-navigation-bio .biography-home,
+    .page-navigation-bio .nav-back-bio,
+    .page-navigation-bio .nav-next-bio {
+        width: 44px !important;
+        height: 44px !important;
     }
 }
