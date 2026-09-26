@@ -2375,7 +2375,7 @@ LISTEN CLOSELY
 
     margin: 0 0 5px;
 
-    text-align: center;
+    text-align: justify;
 
     font-family: Kindergarten, cursive;
 
@@ -2408,13 +2408,13 @@ LISTEN CLOSELY
 ========================================= */
 
 .biography-home {
-     width: 55px;
+    width: 55px;
     height: 55px;
 
     position: absolute;
 
     left: 50%;
-    bottom: 150px;
+    bottom: 180px;
 
     transform: translateX(-50%);
 
@@ -2666,22 +2666,6 @@ LISTEN CLOSELY
 
     /* DI BELAKANG FOTO */
     z-index: 3;
-
-    pointer-events: none;
-}
-
-.love-decoration-bio2 {
-    position: absolute;
-
-    width: 400px;
-    height: auto;
-
-    /* POSISI BEBAS */
-    left: 3px;
-    bottom: 3px;
-
-    /* DI BELAKANG FOTO */
-    z-index: 2;
 
     pointer-events: none;
 }
@@ -3044,7 +3028,7 @@ LISTEN CLOSELY
 .love-decoration-bio2 {
     position: absolute;
 
-    width: 400px;
+    width: 250px;
     height: auto;
 
     /* POSISI BEBAS */
@@ -3449,12 +3433,12 @@ LISTEN CLOSELY
 .love-decoration-bio4 {
     position: absolute;
 
-    width: 400px;
+    width: 300px;
     height: auto;
 
     /* POSISI BEBAS */
     right:-30px;
-    bottom: 220%;
+    bottom: 200%;
 
     /* DI BELAKANG FOTO */
     z-index: 2;
@@ -3465,12 +3449,12 @@ LISTEN CLOSELY
 .love-decoration-bio5 {
     position: absolute;
 
-    width: 400px;
+    width: 300px;
     height: auto;
 
     /* POSISI BEBAS */
     left: -30px;
-    bottom: 225%;
+    bottom: 200%;
 
     /* DI BELAKANG FOTO */
     z-index: 2;
@@ -4946,5 +4930,436 @@ img {
 
     .nav-back-bio {
         right: 25px !important;
+    }
+}
+
+
+
+/* =========================================================
+   MOBILE FINAL REFINEMENT
+   Fokus:
+   - skala seluruh layout HP lebih proporsional
+   - tombol Home + Next berada di tengah tepat di bawah memoirs-story
+   - favorite box langsung di bawah daily image
+   - favorite character dihapus
+   - isi list memenuhi box dan justify
+   ========================================================= */
+
+/* Favorite character dihapus dari halaman detail */
+.favorite-character,
+.favorite-character-mamah,
+.favorite-character-mbak,
+.favorite-character-abang {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+
+    /* ---------- GLOBAL MOBILE WIDTH ---------- */
+    .header,
+    .echoed-header,
+    .listen-header,
+    .memoirs-header {
+        box-sizing: border-box !important;
+    }
+
+    .menu-section,
+    .quote-section,
+    .memoirs-container,
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        width: 88% !important;
+        max-width: 88% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* ---------- INDEX ---------- */
+    .header {
+        padding: 26px 5.5% 18px !important;
+    }
+
+    .header-content {
+        min-height: 150px !important;
+        padding: 18px 22px !important;
+    }
+
+    .welcome h1 {
+        font-size: clamp(42px, 11vw, 62px) !important;
+        line-height: .95 !important;
+    }
+
+    .welcome p {
+        margin-top: 10px !important;
+        font-size: 12px !important;
+    }
+
+    .logo {
+        width: 120px !important;
+        max-width: 30vw !important;
+    }
+
+    .menu-section {
+        height: 920px !important;
+        border-radius: 28px !important;
+        margin-top: 14px !important;
+        margin-bottom: 32px !important;
+    }
+
+    .menu {
+        width: 66% !important;
+        gap: 42px !important;
+    }
+
+    .menu-button {
+        min-height: 78px !important;
+        padding: 12px 16px !important;
+        font-size: 25px !important;
+        line-height: 1 !important;
+        border-radius: 24px !important;
+    }
+
+    .quote-section {
+        height: 180px !important;
+        border-radius: 28px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .quote-slide p {
+        font-size: 27px !important;
+        line-height: 1 !important;
+    }
+
+    /* ---------- MEMOIRS BIOGRAPHY ---------- */
+    .memoirs-header {
+        width: 88% !important;
+        height: 138px !important;
+        margin: 28px auto 18px !important;
+        padding: 0 18px !important;
+    }
+
+    .memoirs-title h1 {
+        font-size: 42px !important;
+        line-height: .92 !important;
+    }
+
+    .memoirs-container {
+        position: relative !important;
+        min-height: 980px !important;
+        height: auto !important;
+        padding: 18px 12px 110px !important;
+        overflow: hidden !important;
+        border-radius: 26px !important;
+    }
+
+    .family-title {
+        font-size: 43px !important;
+        line-height: .95 !important;
+        margin: 0 auto 10px !important;
+    }
+
+    .character-talia {
+        top: 116px !important;
+        width: 205px !important;
+        max-width: 62vw !important;
+    }
+
+    .character-manda,
+    .character-bara {
+        top: 345px !important;
+        width: 40% !important;
+        max-width: 40% !important;
+    }
+
+    .character-manda {
+        left: 5% !important;
+    }
+
+    .character-bara {
+        right: 5% !important;
+    }
+
+    .character-button {
+        width: auto !important;
+        min-width: 108px !important;
+        max-width: 145px !important;
+        min-height: 38px !important;
+        margin: -20px auto 0 !important;
+        padding: 7px 10px !important;
+        font-size: 16px !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        border-radius: 24px !important;
+    }
+
+    .character-talia .character-button {
+        max-width: 155px !important;
+    }
+
+    .memoirs-story {
+        position: absolute !important;
+        top: 525px !important;
+        bottom: auto !important;
+        left: 4% !important;
+        right: 4% !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 14px 15px 16px !important;
+        border-radius: 22px !important;
+        text-align: justify !important;
+    }
+
+    .memoirs-story h2 {
+        margin: 0 0 7px !important;
+        font-size: 28px !important;
+        line-height: 1 !important;
+        text-align: center !important;
+    }
+
+    .memoirs-story p {
+        margin: 6px 0 !important;
+        font-size: 11.5px !important;
+        line-height: 1.28 !important;
+        text-align: justify !important;
+    }
+
+    /* Home + Next berada di tengah, di bawah memoirs-story */
+    .memoirs-container .biography-home {
+        position: absolute !important;
+        left: calc(50% - 38px) !important;
+        right: auto !important;
+        bottom: 28px !important;
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0 !important;
+        transform: translateX(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    .memoirs-container .nav-next,
+    .memoirs-container .nav-back,
+    .memoirs-container .nav-back-bio {
+        position: absolute !important;
+        left: calc(50% + 38px) !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: 28px !important;
+        width: 48px !important;
+        height: 48px !important;
+        transform: translateX(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    .memoirs-container .nav-next span,
+    .memoirs-container .nav-back span,
+    .memoirs-container .nav-back-bio span {
+        top: 5px !important;
+    }
+
+    /* ---------- DETAIL: MAMAH / MBAK / ABANG ---------- */
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        position: relative !important;
+        min-height: 1320px !important;
+        height: auto !important;
+        padding: 18px 12px 150px !important;
+        overflow: hidden !important;
+        border-radius: 26px !important;
+    }
+
+    .mamah-photo-section,
+    .mbak-photo-section,
+    .abang-photo-section {
+        position: relative !important;
+        left: 0 !important;
+        width: 92% !important;
+        max-width: 92% !important;
+        margin: 0 auto 10px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .mamah-daily-image,
+    .mbak-daily-image,
+    .abang-daily-image {
+        display: block !important;
+        width: 92% !important;
+        max-width: 92% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        object-fit: contain !important;
+    }
+
+    .favorite-box,
+    .favorite-box-mbak {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 92% !important;
+        max-width: 92% !important;
+        min-height: 0 !important;
+        height: auto !important;
+        margin: 10px auto 0 !important;
+        padding: 18px 18px 20px !important;
+        display: block !important;
+        border-radius: 24px !important;
+    }
+
+    .favorite-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .favorite-content h2 {
+        width: 100% !important;
+        margin: 0 0 12px !important;
+        font-size: 25px !important;
+        line-height: 1.02 !important;
+        text-align: center !important;
+    }
+
+    .favorite-content ol {
+        width: 100% !important;
+        margin: 0 !important;
+        padding-left: 24px !important;
+        font-size: 13.5px !important;
+        line-height: 1.35 !important;
+        text-align: justify !important;
+        text-justify: inter-word !important;
+    }
+
+    .favorite-content li {
+        width: 100% !important;
+        margin: 0 0 8px !important;
+        padding-left: 3px !important;
+        text-align: justify !important;
+        text-justify: inter-word !important;
+    }
+
+    /* navigasi detail tetap di bawah, tidak menabrak favorite box */
+    .bottom-navigation-bio {
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 34px !important;
+        width: 100% !important;
+        height: 62px !important;
+        margin: 0 !important;
+        z-index: 999 !important;
+    }
+
+    .bottom-navigation-bio .moirs-home {
+        position: absolute !important;
+        left: calc(50% - 38px) !important;
+        right: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        width: 48px !important;
+        height: 48px !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .bottom-navigation-bio .nav-back-bio,
+    .bottom-navigation-bio .nav-next,
+    .bottom-navigation-bio .nav-back {
+        position: absolute !important;
+        left: calc(50% + 38px) !important;
+        right: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+        width: 48px !important;
+        height: 48px !important;
+        transform: translate(-50%, -50%) !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .menu-section {
+        height: 900px !important;
+    }
+
+    .menu {
+        width: 68% !important;
+        gap: 40px !important;
+    }
+
+    .menu-button {
+        min-height: 76px !important;
+        font-size: 23px !important;
+    }
+
+    .memoirs-container {
+        min-height: 950px !important;
+    }
+
+    .family-title {
+        font-size: 40px !important;
+    }
+
+    .memoirs-story {
+        top: 510px !important;
+    }
+
+    .memoirs-story p {
+        font-size: 11px !important;
+    }
+
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        min-height: 1280px !important;
+    }
+
+    .favorite-content ol {
+        font-size: 13px !important;
+        line-height: 1.34 !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .menu-button {
+        font-size: 21px !important;
+    }
+
+    .memoirs-title h1 {
+        font-size: 38px !important;
+    }
+
+    .family-title {
+        font-size: 36px !important;
+    }
+
+    .character-button {
+        font-size: 14px !important;
+        min-width: 98px !important;
+    }
+
+    .memoirs-story {
+        top: 495px !important;
+    }
+
+    .memoirs-story h2 {
+        font-size: 25px !important;
+    }
+
+    .memoirs-story p {
+        font-size: 10.5px !important;
+    }
+
+    .favorite-content h2 {
+        font-size: 22px !important;
+    }
+
+    .favorite-content ol {
+        font-size: 12px !important;
     }
 }
