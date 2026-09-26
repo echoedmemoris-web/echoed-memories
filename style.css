@@ -1326,6 +1326,7 @@ body {
 .echoed-main {
     width: 100%;
 
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1741,7 +1742,7 @@ LISTEN CLOSELY
 
 .closing-box {
     width: 88%;
-    max-width: 900px;
+    max-width: 800px;
 
     margin: 32px auto 70px;
 
@@ -2002,8 +2003,8 @@ LISTEN CLOSELY
 
     position: absolute;
 
-    bottom: -15px;
-    left: 30px;
+    bottom: -30px;
+    left: 60px;
 
     transform: translateX(-50%);
 
@@ -2032,8 +2033,8 @@ LISTEN CLOSELY
 .home-roof {
     position: absolute;
 
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
 
     left: 11px;
     top: 3px;
@@ -2051,7 +2052,7 @@ LISTEN CLOSELY
 .home-body {
     position: absolute;
 
-    width: 36px;
+    width: 30px;
     height: 29px;
 
     left: 9px;
@@ -2232,7 +2233,7 @@ LISTEN CLOSELY
 ========================================= */
 
 .character-talia {
-    top: 165px;
+    top: 160px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -2304,7 +2305,7 @@ LISTEN CLOSELY
     width: 250px;
 
     /* naik ke atas foto */
-    margin: -40px auto 0;
+    margin: -60px auto 0;
 
     padding: 12px 15px;
 
@@ -2568,85 +2569,6 @@ LISTEN CLOSELY
       0 0 8px rgba(255, 255, 255, 0.15);
 }
 
-/* =========================================
-   FAVORITE CHARACTER
-========================================= */
-
-.favorite-character {
-    position: relative;
-
-    width: 43%;
-    height: 100%;
-
-    display: block;
-
-    align-self: stretch;
-}
-
-
-/* FOTO mbak */
-
-.favorite-character img {
-
-    position: absolute;
-
-    /* naik ke atas */
-    top: -30px;
-
-    /* posisi horizontal */
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    /* BESARKAN FOTO */
-    width: 101%;
-
-    max-width: none;
-
-    height: auto;
-
-    display: block;
-
-    z-index: 2;
-}
-
-.favorite-character-mamah {
-    position: relative;
-
-    width: 43%;
-    height: 100%;
-
-    display: block;
-
-    align-self: stretch;
-}
-
-
-/* FOTO MAMAH */
-
-.favorite-character-mamah img {
-
-    position: absolute;
-
-    /* naik ke atas */
-    top: 3px;
-
-    /* posisi horizontal */
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    /* BESARKAN FOTO */
-    width: 93%;
-
-    max-width: none;
-
-    height: auto;
-
-    display: block;
-
-    z-index: 2;
-}
 
 
 /* =========================================
@@ -2703,29 +2625,6 @@ LISTEN CLOSELY
 .moirs-home:hover {
     transform: translateX(-50%) translateY(-5px) scale(1.05);
 }
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.page-navigation-bio {
-    width: 88%;
-    max-width: 900px;
-
-    margin: 0 auto 35px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    position: relative;
-
-    z-index: 10;
-}
-
 
 /* =================
    BOTTOM NAVIGATION
@@ -2831,9 +2730,9 @@ LISTEN CLOSELY
 
 .favorite-content {
 
-    width: 50%;
+    width: 100%;
 
-    padding: 20px 10px 10px 10px;
+    padding: 10px 2px 2px 2px;
 
     box-sizing: border-box;
 }
@@ -2853,7 +2752,7 @@ LISTEN CLOSELY
 
     color: white;
 
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -2961,48 +2860,6 @@ LISTEN CLOSELY
 }
 
 
-/* =========================================
-   FAVORITE CHARACTER
-========================================= */
-
-.favorite-character-mbak {
-    position: relative;
-
-    width: 43%;
-    height: 100%;
-
-    display: block;
-
-    align-self: stretch;
-}
-
-
-/* FOTO MBAK */
-
-.favorite-character-mbak img {
-
-    position: absolute;
-
-    /* naik ke atas */
-    top: 80px;
-
-    /* posisi horizontal */
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    /* BESARKAN FOTO */
-    width: 170%;
-
-    max-width: none;
-
-    height: auto;
-
-    display: block;
-
-    z-index: 2;
-}
-
 
 /* =========================================
    LOVE DECORATION
@@ -3074,28 +2931,6 @@ LISTEN CLOSELY
 
 .moirs-home:hover {
     transform: translateX(-50%) translateY(-5px) scale(1.05);
-}
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.page-navigation-bio {
-    width: 88%;
-    max-width: 900px;
-
-    margin: 0 auto 35px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    position: relative;
-
-    z-index: 10;
 }
 
 
@@ -3202,9 +3037,9 @@ LISTEN CLOSELY
 
 .favorite-content {
 
-    width: 57%;
+    width: 100%;
 
-    padding: 20px 10px 10px 10px;
+    padding: 10px 2px 2px 2px;
 
     box-sizing: border-box;
 }
@@ -3334,49 +3169,6 @@ LISTEN CLOSELY
 
 
 /* =========================================
-   FAVORITE CHARACTER
-========================================= */
-
-.favorite-character-abang {
-    position: relative;
-
-    width: 43%;
-    height: 100%;
-
-    display: block;
-
-    align-self: stretch;
-}
-
-
-/* FOTO ABANG */
-
-.favorite-character-abang img {
-
-    position: absolute;
-
-    /* naik ke atas */
-    top: -30px;
-
-    /* posisi horizontal */
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    /* BESARKAN FOTO */
-    width: 100%;
-
-    max-width: none;
-
-    height: auto;
-
-    display: block;
-
-    z-index: 2;
-}
-
-
-/* =========================================
    LOVE DECORATION
 ========================================= */
 
@@ -3499,26 +3291,6 @@ LISTEN CLOSELY
 }
 
 
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.page-navigation-bio {
-    width: 88%;
-    max-width: 900px;
-
-    margin: 0 auto 35px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    position: relative;
-
-    z-index: 10;
-}
 
 
 /* =================
@@ -3624,13 +3396,12 @@ LISTEN CLOSELY
 
 .favorite-content {
 
-    width: 57%;
+    width: 100%;
 
-    padding: 20px 10px 10px 10px;
+    padding: 10px 2px 2px 2px;
 
     box-sizing: border-box;
 }
-
 
 .favorite-content h2 {
 
@@ -3677,8 +3448,6 @@ LISTEN CLOSELY
 
 /* =========================================================
    FINAL RESPONSIVE SYSTEM
-   Desktop keeps the original design values.
-   Mobile adapts the existing layout without renaming classes.
 ========================================================= */
 
 /* Make the page itself stable on every viewport */
@@ -3915,16 +3684,6 @@ img {
         max-width: 92%;
     }
 
-    .favorite-character,
-    .favorite-character-mbak {
-        width: 43%;
-        max-width: 43%;
-    }
-
-    .favorite-character img,
-    .favorite-character-mbak img {
-        height: auto;
-    }
 
     .favorite-content {
         width: 57%;
@@ -4065,10 +3824,7 @@ img {
     .slider-arrow {
         font-size: 60px;
     }
-
-    /* Character tetap menggunakan angka desain mobile,
-       tetapi dibatasi agar tidak keluar layar. */
-
+    
     .character-talia {
         max-width: 75vw;
     }
@@ -4107,11 +3863,6 @@ img {
         max-width: 92%;
     }
 
-    .favorite-character,
-    .favorite-character-mbak {
-        width: 43%;
-    }
-
     .favorite-content {
         width: 57%;
     }
@@ -4129,11 +3880,6 @@ img {
     }
 }
 
-/* =========================================================
-   FINAL MOBILE FIXES - HP / TABLET
-   Ditambahkan untuk mencegah box menutupi navigasi dan
-   menjaga teks/foto tetap rapi pada layar kecil.
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -4283,14 +4029,6 @@ img {
         display: block !important;
     }
 
-    /* Foto karakter di favorite box disembunyikan di HP supaya
-       teks punya ruang penuh dan tidak menutup Home/Next/Back. */
-    .favorite-character,
-    .favorite-character-mamah,
-    .favorite-character-mbak,
-    .favorite-character-abang {
-        display: none !important;
-    }
 
     .favorite-content {
         width: 100% !important;
@@ -4420,7 +4158,6 @@ img {
         letter-spacing: 0 !important;
     }
 
-    /* Pastikan navigasi selalu berada di atas box konten */
     .bottom-navigation,
     .bottom-navigation-bio,
     .page-navigation,
@@ -4435,16 +4172,6 @@ img {
     }
 }
 
-/* =========================================================
-   FINAL MOBILE POLISH V2
-   Fokus: HP <= 480px
-   - menu index lebih proporsional
-   - Echoed Memories lebih ringkas & nyaman dibaca
-   - navigasi Listen Closely sejajar
-   - tombol karakter memoir tidak bertabrakan
-   - memoirs-story dinaikkan tepat di bawah tombol karakter
-   - favorite box mengikuti daily image dalam normal flow
-========================================================= */
 
 @media (max-width: 480px) {
 
@@ -4627,7 +4354,6 @@ img {
         max-width: 175px !important;
     }
 
-    /* THE MEMOIRS: naik ke bawah tombol Mbak/Abang */
     .memoirs-story {
         top: 650px !important;
         bottom: auto !important;
@@ -4657,7 +4383,6 @@ img {
 
     /* =====================================================
        5. MAMAH / MBAK / ABANG DETAIL PAGES
-       Favorite box berada tepat setelah daily image.
     ===================================================== */
     .mamah-container,
     .mbak-container,
@@ -4731,22 +4456,6 @@ img {
     .favorite-content li {
         margin-bottom: 6px !important;
     }
-
-    /* foto karakter di dalam favorite-box tetap disembunyikan di HP
-       agar isi tidak sempit dan navigasi tidak tertutup */
-    .favorite-character,
-    .favorite-character-mamah,
-    .favorite-character-mbak,
-    .favorite-character-abang {
-        display: none !important;
-    }
-
-    /* Navigasi halaman bio tetap punya ruang sendiri di bawah konten */
-    .bottom-navigation-bio,
-    .page-navigation-bio {
-        position: relative !important;
-        z-index: 999 !important;
-    }
 }
 
 /* HP sangat kecil */
@@ -4778,22 +4487,7 @@ img {
     }
 }
 
-
-/* =========================================================
-   FINAL MOBILE EXTENSION — DETAIL CHARACTER PAGES
-   Tujuan:
-   1) Mamah / Mbak / Abang punya area body lebih panjang.
-   2) Ada ruang kosong setelah favorite box untuk foto tambahan.
-   3) Tombol Home dan navigasi diturunkan dan disejajarkan.
-   ========================================================= */
-
 @media (max-width: 768px) {
-
-    /* -----------------------------------------------------
-       BODY / CONTAINER DETAIL
-       Dibuat panjang seperti area utama index dan tetap bisa
-       memanjang otomatis jika nanti ditambah foto/konten.
-       ----------------------------------------------------- */
     .mamah-container,
     .mbak-container,
     .abang-container {
@@ -4935,236 +4629,459 @@ img {
 
 
 
-/* =========================================================
-   MOBILE FINAL REFINEMENT
-   Fokus:
-   - skala seluruh layout HP lebih proporsional
-   - tombol Home + Next berada di tengah tepat di bawah memoirs-story
-   - favorite box langsung di bawah daily image
-   - favorite character dihapus
-   - isi list memenuhi box dan justify
-   ========================================================= */
-
-/* Favorite character dihapus dari halaman detail */
-.favorite-character,
-.favorite-character-mamah,
-.favorite-character-mbak,
-.favorite-character-abang {
-    display: none !important;
-}
+/* =====================================================================
+   MOBILE LAYOUT MASTER OVERRIDE V3
+   Target utama: HP portrait ± 360–576 px 
+===================================================================== */
 
 @media (max-width: 768px) {
 
-    /* ---------- GLOBAL MOBILE WIDTH ---------- */
-    .header,
-    .echoed-header,
-    .listen-header,
-    .memoirs-header {
-        box-sizing: border-box !important;
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
-    .menu-section,
-    .quote-section,
-    .memoirs-container,
-    .mamah-container,
-    .mbak-container,
-    .abang-container {
-        width: 88% !important;
-        max-width: 88% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    body {
+        min-width: 0 !important;
     }
 
-    /* ---------- INDEX ---------- */
+    /* ================================================================
+       GLOBAL HEADER / FOOTER
+    ================================================================= */
+
     .header {
-        padding: 26px 5.5% 18px !important;
+        width: 100% !important;
+        padding: 28px 5.5% 18px !important;
     }
 
     .header-content {
-        min-height: 150px !important;
-        padding: 18px 22px !important;
+        width: 100% !important;
+        min-height: 135px !important;
+        padding: 20px 24px !important;
+        gap: 14px !important;
     }
 
     .welcome h1 {
-        font-size: clamp(42px, 11vw, 62px) !important;
-        line-height: .95 !important;
+        font-size: clamp(38px, 9vw, 58px) !important;
+        line-height: .92 !important;
     }
 
     .welcome p {
         margin-top: 10px !important;
-        font-size: 12px !important;
+        font-size: clamp(10px, 2.5vw, 14px) !important;
+        line-height: 1.25 !important;
     }
 
     .logo {
-        width: 120px !important;
-        max-width: 30vw !important;
+        width: clamp(90px, 23vw, 135px) !important;
+        flex: 0 0 auto !important;
     }
 
+    .footer {
+        width: 100vw !important;
+        min-height: 58px !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        padding: 14px 12px !important;
+    }
+
+    .footer p {
+        font-size: clamp(11px, 3vw, 16px) !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+    }
+
+    /* ================================================================
+       INDEX.HTML
+    ================================================================= */
+
     .menu-section {
-        height: 920px !important;
-        border-radius: 28px !important;
-        margin-top: 14px !important;
-        margin-bottom: 32px !important;
+        width: 88% !important;
+        max-width: 620px !important;
+        height: clamp(610px, 135vw, 860px) !important;
+        margin: 18px auto 28px !important;
+        border-radius: 26px !important;
     }
 
     .menu {
-        width: 66% !important;
-        gap: 42px !important;
+        width: 64% !important;
+        max-width: 360px !important;
+        gap: clamp(34px, 8vw, 54px) !important;
     }
 
     .menu-button {
-        min-height: 78px !important;
-        padding: 12px 16px !important;
-        font-size: 25px !important;
-        line-height: 1 !important;
+        min-height: 72px !important;
+        padding: 13px 16px !important;
         border-radius: 24px !important;
+        font-size: clamp(21px, 5.4vw, 30px) !important;
+        line-height: 1 !important;
     }
 
     .quote-section {
-        height: 180px !important;
-        border-radius: 28px !important;
-        margin-bottom: 30px !important;
+        width: 88% !important;
+        max-width: 620px !important;
+        height: clamp(125px, 30vw, 180px) !important;
+        margin: 0 auto 30px !important;
+        border-radius: 26px !important;
+    }
+
+    .quote-slider {
+        width: 72% !important;
     }
 
     .quote-slide p {
-        font-size: 27px !important;
+        font-size: clamp(20px, 5.2vw, 30px) !important;
         line-height: 1 !important;
     }
 
-    /* ---------- MEMOIRS BIOGRAPHY ---------- */
+    .slider-arrow {
+        width: 40px !important;
+        height: 70px !important;
+        font-size: 52px !important;
+    }
+
+    .left-arrow {
+        left: 7px !important;
+    }
+
+    .right-arrow {
+        right: 7px !important;
+    }
+
+    /* ================================================================
+       ECHOED MEMORIES
+    ================================================================= */
+
+    .echoed-header {
+        width: 88% !important;
+        max-width: 620px !important;
+        min-height: 105px !important;
+        height: auto !important;
+        margin: 26px auto 22px !important;
+        padding: 14px 18px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .echoed-title {
+        width: 100% !important;
+        margin: 0 !important;
+        font-size: clamp(38px, 10vw, 56px) !important;
+        line-height: .92 !important;
+        text-align: center !important;
+        letter-spacing: 0 !important;
+    }
+
+    .echoed-main {
+        width: 100% !important;
+        padding: 0 0 34px !important;
+        align-items: center !important;
+    }
+
+    .echoed-story {
+        width: 90% !important;
+        max-width: 600px !important;
+        margin: 0 auto !important;
+        padding: 18px 18px 20px !important;
+        border-radius: 24px !important;
+        font-size: clamp(12px, 3vw, 15px) !important;
+        line-height: 1.35 !important;
+        text-align: left !important;
+    }
+
+    .echoed-story p {
+        margin: 0 0 13px !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+        text-align: left !important;
+    }
+
+    .echoed-story .kindergarten-text {
+        font-size: 1.08em !important;
+        line-height: 1.2 !important;
+    }
+
+    .thank-you-quote {
+        margin: 0 0 13px !important;
+        line-height: 1.3 !important;
+    }
+
+    .final-thank {
+        font-size: 1.12em !important;
+    }
+
+    .echoed-home {
+        margin-top: 26px !important;
+    }
+
+    /* ================================================================
+       LISTEN CLOSELY / REGULATION / PERMISSION
+    ================================================================= */
+
+    .listen-header {
+        width: 90% !important;
+        min-height: 115px !important;
+        margin: 26px auto 24px !important;
+        padding: 16px 20px !important;
+    }
+
+    .listen-title {
+        font-size: clamp(42px, 10vw, 58px) !important;
+        line-height: .95 !important;
+    }
+
+    .section-title {
+        width: 86% !important;
+        min-height: 62px !important;
+        margin: 0 auto 24px !important;
+        font-size: clamp(30px, 8vw, 42px) !important;
+        border-radius: 24px !important;
+    }
+
+    .regulation-box,
+    .permission-box {
+        width: 90% !important;
+        max-width: 620px !important;
+        padding: 20px 18px 22px !important;
+        border-radius: 24px !important;
+        font-size: clamp(12px, 3vw, 14px) !important;
+        line-height: 1.34 !important;
+        text-align: left !important;
+    }
+
+    .intro-text {
+        margin-bottom: 8px !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    .regulation-box ol,
+    .permission-box ol {
+        padding-left: 24px !important;
+    }
+
+    .regulation-box li,
+    .permission-box li {
+        margin-bottom: 6px !important;
+        padding-left: 2px !important;
+    }
+
+    .closing-box,
+    .permission-closing {
+        width: 90% !important;
+        max-width: 620px !important;
+        min-height: 0 !important;
+        margin: 24px auto 30px !important;
+        padding: 24px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    .closing-box p,
+    .permission-closing p {
+        font-size: clamp(21px, 6vw, 30px) !important;
+        line-height: 1.08 !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Home dan next/back satu garis */
+    .bottom-navigation {
+        position: relative !important;
+        width: 90% !important;
+        max-width: 620px !important;
+        height: 68px !important;
+        margin: 8px auto 24px !important;
+    }
+
+    .bottom-navigation .listen-home {
+        top: 50% !important;
+        bottom: auto !important;
+        left: 28px !important;
+        right: auto !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .bottom-navigation .nav-next,
+    .bottom-navigation .nav-back {
+        top: 50% !important;
+        bottom: auto !important;
+        right: 22px !important;
+        left: auto !important;
+        transform: translateY(-50%) !important;
+    }
+
+    /* ================================================================
+       MEMOIRS BIOGRAPHY — FAMILY PAGE
+       Mobile dibuat normal-flow/grid agar tidak saling menutupi.
+    ================================================================= */
+
     .memoirs-header {
         width: 88% !important;
-        height: 138px !important;
+        max-width: 620px !important;
+        height: auto !important;
+        min-height: 115px !important;
         margin: 28px auto 18px !important;
-        padding: 0 18px !important;
+        padding: 14px 18px !important;
     }
 
     .memoirs-title h1 {
-        font-size: 42px !important;
-        line-height: .92 !important;
+        font-size: clamp(38px, 9vw, 52px) !important;
+        line-height: .94 !important;
     }
 
     .memoirs-container {
         position: relative !important;
-        min-height: 980px !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        column-gap: 12px !important;
+        row-gap: 14px !important;
+
+        width: 88% !important;
+        max-width: 620px !important;
+        min-height: 0 !important;
         height: auto !important;
-        padding: 18px 12px 110px !important;
+        margin: 16px auto 30px !important;
+        padding: 18px 14px 34px !important;
         overflow: hidden !important;
         border-radius: 26px !important;
     }
 
     .family-title {
-        font-size: 43px !important;
-        line-height: .95 !important;
-        margin: 0 auto 10px !important;
+        grid-column: 1 / -1 !important;
+        position: relative !important;
+        margin: 0 auto 4px !important;
+        font-size: clamp(38px, 9.2vw, 52px) !important;
+        line-height: .96 !important;
+    }
+
+    .character {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
     }
 
     .character-talia {
-        top: 116px !important;
-        width: 205px !important;
-        max-width: 62vw !important;
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        left: auto !important;
+        width: min(58vw, 245px) !important;
+        margin: 0 auto !important;
     }
 
     .character-manda,
     .character-bara {
-        top: 345px !important;
-        width: 40% !important;
-        max-width: 40% !important;
+        width: 100% !important;
+        max-width: 180px !important;
+        margin: 0 auto !important;
+        align-self: end !important;
     }
 
     .character-manda {
-        left: 5% !important;
+        left: auto !important;
+        justify-self: end !important;
     }
 
     .character-bara {
-        right: 5% !important;
+        right: auto !important;
+        justify-self: start !important;
+    }
+
+    .character-talia img,
+    .character-manda img,
+    .character-bara img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
 
     .character-button {
-        width: auto !important;
-        min-width: 108px !important;
-        max-width: 145px !important;
-        min-height: 38px !important;
-        margin: -20px auto 0 !important;
-        padding: 7px 10px !important;
-        font-size: 16px !important;
+        width: calc(100% - 6px) !important;
+        max-width: 175px !important;
+        min-height: 40px !important;
+        margin: -22px auto 0 !important;
+        padding: 8px 8px !important;
+        border-radius: 24px !important;
+        font-size: clamp(14px, 4vw, 19px) !important;
         line-height: 1 !important;
         white-space: nowrap !important;
-        border-radius: 24px !important;
     }
 
     .character-talia .character-button {
-        max-width: 155px !important;
+        width: 75% !important;
+        max-width: 180px !important;
     }
 
     .memoirs-story {
-        position: absolute !important;
-        top: 525px !important;
+        grid-column: 1 / -1 !important;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
         bottom: auto !important;
-        left: 4% !important;
-        right: 4% !important;
-        width: auto !important;
-        margin: 0 !important;
-        padding: 14px 15px 16px !important;
+        left: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 2px auto 0 !important;
+        padding: 16px 16px 18px !important;
         border-radius: 22px !important;
-        text-align: justify !important;
     }
 
     .memoirs-story h2 {
-        margin: 0 0 7px !important;
-        font-size: 28px !important;
+        margin: 0 0 6px !important;
+        font-size: clamp(27px, 7vw, 36px) !important;
         line-height: 1 !important;
         text-align: center !important;
     }
 
     .memoirs-story p {
-        margin: 6px 0 !important;
-        font-size: 11.5px !important;
-        line-height: 1.28 !important;
-        text-align: justify !important;
+        margin: 7px 0 !important;
+        font-size: clamp(11px, 2.8vw, 13px) !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
     }
 
-    /* Home + Next berada di tengah, di bawah memoirs-story */
-    .memoirs-container .biography-home {
-        position: absolute !important;
-        left: calc(50% - 38px) !important;
+    .biography-home {
+        grid-column: 1 / -1 !important;
+        position: relative !important;
+        left: auto !important;
         right: auto !important;
-        bottom: 28px !important;
-        width: 48px !important;
-        height: 48px !important;
-        margin: 0 !important;
-        transform: translateX(-50%) !important;
-        z-index: 1000 !important;
-    }
-
-    .memoirs-container .nav-next,
-    .memoirs-container .nav-back,
-    .memoirs-container .nav-back-bio {
-        position: absolute !important;
-        left: calc(50% + 38px) !important;
-        right: auto !important;
+        bottom: auto !important;
         top: auto !important;
-        bottom: 28px !important;
-        width: 48px !important;
-        height: 48px !important;
-        transform: translateX(-50%) !important;
-        z-index: 1000 !important;
+        justify-self: center !important;
+        margin: 12px auto 2px !important;
+        transform: none !important;
     }
 
-    .memoirs-container .nav-next span,
-    .memoirs-container .nav-back span,
-    .memoirs-container .nav-back-bio span {
-        top: 5px !important;
+    .biography-home:hover {
+        transform: translateY(-3px) scale(1.03) !important;
     }
 
-    /* ---------- DETAIL: MAMAH / MBAK / ABANG ---------- */
+    /* ================================================================
+       MBAK / MAMAH / ABANG DETAIL
+    ================================================================= */
+
     .mamah-container,
     .mbak-container,
     .abang-container {
         position: relative !important;
-        min-height: 1320px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        width: 88% !important;
+        max-width: 620px !important;
+        min-height: calc(100svh - 120px) !important;
         height: auto !important;
-        padding: 18px 12px 150px !important;
+
+        margin: 16px auto 30px !important;
+        padding: 18px 12px 210px !important;
+
+        box-sizing: border-box !important;
         overflow: hidden !important;
         border-radius: 26px !important;
     }
@@ -5173,10 +5090,12 @@ img {
     .mbak-photo-section,
     .abang-photo-section {
         position: relative !important;
-        left: 0 !important;
-        width: 92% !important;
-        max-width: 92% !important;
-        margin: 0 auto 10px !important;
+        left: auto !important;
+        right: auto !important;
+        width: 94% !important;
+        max-width: 540px !important;
+        margin: 0 auto 12px !important;
+
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
@@ -5185,10 +5104,10 @@ img {
     .mamah-daily-image,
     .mbak-daily-image,
     .abang-daily-image {
-        display: block !important;
         width: 92% !important;
-        max-width: 92% !important;
+        max-width: 500px !important;
         height: auto !important;
+        display: block !important;
         margin: 0 auto !important;
         object-fit: contain !important;
     }
@@ -5197,15 +5116,17 @@ img {
     .favorite-box-mbak {
         position: relative !important;
         top: auto !important;
+        right: auto !important;
         bottom: auto !important;
         left: auto !important;
-        right: auto !important;
-        width: 92% !important;
-        max-width: 92% !important;
+
+        width: 94% !important;
+        max-width: 540px !important;
         min-height: 0 !important;
-        height: auto !important;
+
         margin: 10px auto 0 !important;
-        padding: 18px 18px 20px !important;
+        padding: 16px 14px 18px !important;
+
         display: block !important;
         border-radius: 24px !important;
     }
@@ -5213,138 +5134,179 @@ img {
     .favorite-content {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        padding: 2px 6px !important;
     }
 
     .favorite-content h2 {
-        width: 100% !important;
-        margin: 0 0 12px !important;
-        font-size: 25px !important;
-        line-height: 1.02 !important;
+        margin: 0 0 8px !important;
+        font-size: clamp(22px, 6vw, 30px) !important;
+        line-height: 1 !important;
         text-align: center !important;
     }
 
     .favorite-content ol {
-        width: 100% !important;
         margin: 0 !important;
-        padding-left: 24px !important;
-        font-size: 13.5px !important;
-        line-height: 1.35 !important;
-        text-align: justify !important;
-        text-justify: inter-word !important;
+        padding-left: 21px !important;
+        font-size: clamp(11px, 3vw, 14px) !important;
+        line-height: 1.28 !important;
+        text-align: left !important;
     }
 
     .favorite-content li {
-        width: 100% !important;
-        margin: 0 0 8px !important;
-        padding-left: 3px !important;
-        text-align: justify !important;
-        text-justify: inter-word !important;
+        margin-bottom: 6px !important;
+        padding-left: 2px !important;
     }
 
-    /* navigasi detail tetap di bawah, tidak menabrak favorite box */
-    .bottom-navigation-bio {
+    .bottom-navigation-bio,
+    .page-navigation-bio {
         position: absolute !important;
         left: 0 !important;
         right: 0 !important;
-        bottom: 34px !important;
+        bottom: -300px !important;
+
         width: 100% !important;
-        height: 62px !important;
+        height: 66px !important;
         margin: 0 !important;
+
         z-index: 999 !important;
     }
 
-    .bottom-navigation-bio .moirs-home {
+    .moirs-home {
         position: absolute !important;
-        left: calc(50% - 38px) !important;
-        right: auto !important;
         top: 50% !important;
         bottom: auto !important;
-        width: 48px !important;
-        height: 48px !important;
-        transform: translate(-50%, -50%) !important;
+        left: 42px !important;
+        right: auto !important;
+
+        width: 50px !important;
+        height: 50px !important;
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
     }
 
-    .bottom-navigation-bio .nav-back-bio,
-    .bottom-navigation-bio .nav-next,
-    .bottom-navigation-bio .nav-back {
+    .nav-back-bio {
         position: absolute !important;
-        left: calc(50% + 38px) !important;
-        right: auto !important;
         top: 50% !important;
         bottom: auto !important;
-        width: 48px !important;
-        height: 48px !important;
-        transform: translate(-50%, -50%) !important;
+        right: 28px !important;
+        left: auto !important;
+
+        width: 50px !important;
+        height: 50px !important;
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    .moirs-home:hover,
+    .moirs-home:active {
+        transform: translateY(-50%) scale(1.03) !important;
+    }
+
+    .nav-back-bio:hover,
+    .nav-back-bio:active {
+        transform: translateY(-50%) scale(1.03) !important;
+    }
+
+    /* dekorasi dibatasi supaya tidak menutupi tulisan */
+    .love-decoration-bio,
+    .love-decoration-bio1,
+    .love-decoration-bio2,
+    .love-decoration-bio3,
+    .love-decoration-bio4,
+    .love-decoration-bio5 {
+        max-width: 58vw !important;
+        pointer-events: none !important;
     }
 }
 
-@media (max-width: 480px) {
+
+/* =====================================================================
+   EXTRA NARROW PHONE — sekitar 359/360 px 
+===================================================================== */
+@media (max-width: 400px) {
+
+    .header-content {
+        min-height: 120px !important;
+        padding: 16px 18px !important;
+    }
+
+    .welcome h1 {
+        font-size: 36px !important;
+    }
+
+    .welcome p {
+        font-size: 9px !important;
+    }
+
+    .logo {
+        width: 88px !important;
+    }
 
     .menu-section {
-        height: 900px !important;
+        width: 88% !important;
+        border-radius: 22px !important;
     }
 
     .menu {
         width: 68% !important;
-        gap: 40px !important;
+        gap: 34px !important;
     }
 
     .menu-button {
-        min-height: 76px !important;
-        font-size: 23px !important;
+        min-height: 65px !important;
+        padding: 11px 12px !important;
+        font-size: 20px !important;
+        border-radius: 21px !important;
     }
 
-    .memoirs-container {
-        min-height: 950px !important;
+    .quote-section {
+        border-radius: 22px !important;
     }
 
-    .family-title {
-        font-size: 40px !important;
-    }
-
-    .memoirs-story {
-        top: 510px !important;
-    }
-
-    .memoirs-story p {
-        font-size: 11px !important;
-    }
-
-    .mamah-container,
-    .mbak-container,
-    .abang-container {
-        min-height: 1280px !important;
-    }
-
-    .favorite-content ol {
-        font-size: 13px !important;
-        line-height: 1.34 !important;
-    }
-}
-
-@media (max-width: 380px) {
-
-    .menu-button {
-        font-size: 21px !important;
+    .memoirs-header {
+        min-height: 100px !important;
+        padding: 12px 14px !important;
     }
 
     .memoirs-title h1 {
-        font-size: 38px !important;
+        font-size: 34px !important;
+    }
+
+    .memoirs-container {
+        width: 88% !important;
+        padding: 15px 10px 28px !important;
+        column-gap: 8px !important;
+        row-gap: 11px !important;
     }
 
     .family-title {
-        font-size: 36px !important;
+        font-size: 34px !important;
+    }
+
+    .character-talia {
+        width: min(61vw, 205px) !important;
+    }
+
+    .character-manda,
+    .character-bara {
+        max-width: 145px !important;
     }
 
     .character-button {
-        font-size: 14px !important;
-        min-width: 98px !important;
+        max-width: 138px !important;
+        min-height: 35px !important;
+        margin-top: -18px !important;
+        padding: 7px 5px !important;
+        font-size: 13px !important;
+    }
+
+    .character-talia .character-button {
+        max-width: 145px !important;
+        font-size: 13px !important;
     }
 
     .memoirs-story {
-        top: 495px !important;
+        padding: 13px 12px 15px !important;
     }
 
     .memoirs-story h2 {
@@ -5353,13 +5315,266 @@ img {
 
     .memoirs-story p {
         font-size: 10.5px !important;
+        line-height: 1.28 !important;
+    }
+
+    .echoed-title {
+        font-size: 36px !important;
+    }
+
+    .echoed-story {
+        width: 92% !important;
+        padding: 16px 15px 18px !important;
+        font-size: 11.5px !important;
+    }
+
+    .listen-title {
+        font-size: 40px !important;
+    }
+
+    .regulation-box,
+    .permission-box {
+        width: 92% !important;
+        padding: 18px 16px 20px !important;
+        font-size: 11.5px !important;
+    }
+
+    .closing-box p,
+    .permission-closing p {
+        font-size: 21px !important;
+    }
+
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        width: 88% !important;
+        padding: 15px 9px 195px !important;
+    }
+
+    .mamah-daily-image,
+    .mbak-daily-image,
+    .abang-daily-image {
+        width: 94% !important;
+    }
+
+    .favorite-box,
+    .favorite-box-mbak {
+        width: 96% !important;
+        padding: 14px 12px 16px !important;
+        margin-bottom: 110px !important;
     }
 
     .favorite-content h2 {
-        font-size: 22px !important;
+        font-size: 21px !important;
     }
 
     .favorite-content ol {
+        font-size: 10.5px !important;
+        line-height: 1.27 !important;
+    }
+
+    .moirs-home {
+        left: 36px !important;
+    }
+
+    .nav-back-bio {
+        right: 18px !important;
+    }
+}
+
+
+
+/* =====================================================================
+   FOOTER CONSISTENCY 
+   ===================================================================== */
+
+@media (max-width: 480px) {
+
+    /* Footer global: konsisten di semua halaman */
+    .footer,
+    .mamah-page .footer,
+    .mbak-page .footer,
+    .abang-page .footer,
+    .memoirs-page .footer,
+    .echoed-page .footer,
+    .listen-page .footer,
+    .permission-page .footer {
+        position: relative !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        top: auto !important;
+
+        width: 100vw !important;
+        max-width: none !important;
+        min-height: 58px !important;
+
+        margin: 18px 0 0 !important;
+        margin-left: -50vw !important;
+
+        padding: 14px 12px !important;
+        box-sizing: border-box !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: var(--blue) !important;
+        text-align: center !important;
+        overflow: visible !important;
+        z-index: 20 !important;
+
+        transform: none !important;
+    }
+
+    .footer p,
+    .mamah-page .footer p,
+    .mbak-page .footer p,
+    .abang-page .footer p {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        color: var(--white) !important;
+        font-family: Helvetica, Arial, sans-serif !important;
+        font-size: clamp(12px, 3vw, 16px) !important;
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+    }
+
+    /* ================================================================
+       MAMAH TALIA
+    ================================================================ */
+
+    .mamah-page .mamah-container {
+        overflow: visible !important;
+        padding-bottom: 18px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .mamah-page .bottom-navigation-bio,
+    .mamah-page .page-navigation-bio {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        width: 94% !important;
+        max-width: 540px !important;
+        height: 66px !important;
+
+        margin: 12px auto 0 !important;
+
+        background: transparent !important;
+        z-index: 50 !important;
+    }
+
+    /* Home kiri - tetap di atas area orange/background, bukan footer */
+    .mamah-page .moirs-home {
+        position: absolute !important;
+        top: 50% !important;
+        left: 8px !important;
+        right: auto !important;
+        bottom: auto !important;
+
+        width: 50px !important;
+        height: 50px !important;
+
+        transform: translateY(-50%) !important;
+        z-index: 60 !important;
+    }
+
+    /* Next/back kanan */
+    .mamah-page .nav-back-bio {
+        position: absolute !important;
+        top: 50% !important;
+        right: 8px !important;
+        left: auto !important;
+        bottom: auto !important;
+
+        width: 50px !important;
+        height: 50px !important;
+
+        transform: translateY(-50%) !important;
+        z-index: 60 !important;
+    }
+
+    /* Footer Mamah diberi jarak dari navigation */
+    .mamah-page .footer {
+        clear: both !important;
+        margin-top: 14px !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .footer,
+    .mamah-page .footer,
+    .mbak-page .footer,
+    .abang-page .footer {
+        min-height: 56px !important;
+        padding: 13px 10px !important;
+        margin-top: 14px !important;
+    }
+
+    .footer p,
+    .mamah-page .footer p,
+    .mbak-page .footer p,
+    .abang-page .footer p {
         font-size: 12px !important;
     }
+
+    .mamah-page .bottom-navigation-bio,
+    .mamah-page .page-navigation-bio {
+        width: 96% !important;
+        height: 62px !important;
+        margin-top: 10px !important;
+    }
+
+    .mamah-page .moirs-home {
+        left: 5px !important;
+    }
+
+    .mamah-page .nav-back-bio {
+        right: 5px !important;
+    }
+}
+
+
+
+/* =========================================================
+   FIX ONLY: BUTTON MAMAH TALIA
+   ========================================================= */
+
+.character-talia .character-button {
+    margin-top: -72px !important;
+}
+
+@media (max-width: 768px) {
+    .character-talia .character-button {
+        margin-top: -42px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .character-talia .character-button {
+        margin-top: -36px !important;
+    }
+}
+
+
+
+/* =========================================================
+   FIX: THE MEMOIRS ALIGNMENT
+========================================================= */
+
+.memoirs-story h2 {
+    text-align: center !important;
+}
+
+.memoirs-story p {
+    text-align: justify !important;
 }
