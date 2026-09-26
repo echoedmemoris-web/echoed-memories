@@ -5940,3 +5940,130 @@ img {
 .page-navigation-bio .nav-next span {
     border-left-color: var(--blue) !important;
 }
+
+
+
+/* =========================================================
+   PAGE NAVIGATION BIO — SMALLER BUTTON + DEGUM EFFECT
+   Home dan Next/Back dibuat lebih kecil, pendek, dan
+   memberi efek "degum" saat diklik.
+========================================================= */
+
+/* Area navigasi dibuat lebih pendek */
+.page-navigation-bio {
+    min-height: 54px !important;
+}
+
+/* HOME — lebih kecil */
+.page-navigation-bio .moirs-home {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+}
+
+/* Bentuk rumah ikut diperkecil */
+.page-navigation-bio .moirs-home .home-roof {
+    width: 25px !important;
+    height: 25px !important;
+    left: 9px !important;
+    top: 2px !important;
+}
+
+.page-navigation-bio .moirs-home .home-body {
+    width: 29px !important;
+    height: 23px !important;
+    left: 7px !important;
+    top: 17px !important;
+}
+
+.page-navigation-bio .moirs-home .home-door {
+    width: 7px !important;
+    height: 13px !important;
+    left: 18px !important;
+    top: 27px !important;
+}
+
+/* BACK / NEXT — lebih kecil */
+.page-navigation-bio .nav-back-bio,
+.page-navigation-bio .nav-next {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+}
+
+/* Panah back diperkecil */
+.page-navigation-bio .nav-back-bio span {
+    left: 7px !important;
+    top: 6px !important;
+    border-top: 16px solid transparent !important;
+    border-bottom: 16px solid transparent !important;
+    border-right: 24px solid var(--blue) !important;
+}
+
+/* Panah next diperkecil */
+.page-navigation-bio .nav-next span {
+    left: 10px !important;
+    top: 6px !important;
+    border-top: 16px solid transparent !important;
+    border-bottom: 16px solid transparent !important;
+    border-left: 24px solid var(--blue) !important;
+}
+
+/* Efek degum */
+@keyframes bioDegum {
+    0% {
+        transform: scale(1);
+    }
+    35% {
+        transform: scale(0.82);
+    }
+    65% {
+        transform: scale(1.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.page-navigation-bio .moirs-home:active,
+.page-navigation-bio .nav-back-bio:active,
+.page-navigation-bio .nav-next:active {
+    animation: bioDegum 0.28s ease !important;
+}
+
+/* Jaga agar ukuran tetap di mobile */
+@media (max-width: 768px) {
+    .page-navigation-bio {
+        min-height: 54px !important;
+    }
+
+    .page-navigation-bio .moirs-home,
+    .page-navigation-bio .nav-back-bio,
+    .page-navigation-bio .nav-next {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+        max-width: 44px !important;
+        max-height: 44px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-navigation-bio {
+        min-height: 54px !important;
+    }
+
+    .page-navigation-bio .moirs-home,
+    .page-navigation-bio .nav-back-bio,
+    .page-navigation-bio .nav-next {
+        width: 44px !important;
+        height: 44px !important;
+    }
+}
