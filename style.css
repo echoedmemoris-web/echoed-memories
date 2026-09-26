@@ -5578,3 +5578,365 @@ img {
 .memoirs-story p {
     text-align: justify !important;
 }
+
+
+
+/* =========================================================
+   FIX NAVIGATION DETAIL PAGES — UKURAN TETAP
+   Mbak Manda / Mamah Talia / Abang Bara
+   Dibuat seperti navigation Listen Closely:
+   ukuran tombol tidak mengecil/membesar mengikuti device.
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Area navigasi tetap */
+    .bottom-navigation-bio,
+    .page-navigation-bio {
+        position: relative !important;
+        width: 100% !important;
+        height: 70px !important;
+        margin: 12px 0 0 !important;
+        padding: 0 !important;
+    }
+
+    /* HOME — ukuran tetap 55x55 */
+    .moirs-home {
+        position: absolute !important;
+        width: 55px !important;
+        height: 55px !important;
+
+        left: 35px !important;
+        right: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    /* BACK / NEXT — ukuran tetap 55x55 */
+    .nav-back-bio {
+        position: absolute !important;
+        width: 55px !important;
+        height: 55px !important;
+
+        right: 35px !important;
+        left: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+
+        margin: 0 !important;
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    /* Bentuk panah juga tetap */
+    .nav-back-bio span {
+        left: 8px !important;
+        top: 7px !important;
+
+        border-top-width: 21px !important;
+        border-bottom-width: 21px !important;
+        border-right-width: 31px !important;
+    }
+
+    /* Bentuk rumah juga tetap */
+    .moirs-home .home-roof {
+        width: 32px !important;
+        height: 32px !important;
+        left: 11px !important;
+        top: 3px !important;
+    }
+
+    .moirs-home .home-body {
+        width: 36px !important;
+        height: 29px !important;
+        left: 9px !important;
+        top: 21px !important;
+    }
+
+    .moirs-home .home-door {
+        width: 9px !important;
+        height: 16px !important;
+        left: 23px !important;
+        top: 34px !important;
+    }
+}
+
+/* Tidak ada perubahan ukuran khusus untuk HP kecil */
+@media (max-width: 400px) {
+
+    .moirs-home {
+        width: 55px !important;
+        height: 55px !important;
+        left: 35px !important;
+    }
+
+    .nav-back-bio {
+        width: 55px !important;
+        height: 55px !important;
+        right: 35px !important;
+    }
+
+    .bottom-navigation-bio,
+    .page-navigation-bio {
+        height: 70px !important;
+    }
+}
+
+
+
+/* =========================================================
+   FIX NAVIGATION VISIBILITY — DETAIL PAGES
+   Mbak Manda / Mamah Talia / Abang Bara
+   Tombol dibuat tetap 55x55 dan dipastikan selalu terlihat.
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Container harus menjadi acuan posisi tombol */
+    .mamah-container,
+    .mbak-container,
+    .abang-container {
+        position: relative !important;
+        padding-bottom: 90px !important;
+        overflow: hidden !important;
+    }
+
+    /* Area navigasi diletakkan di bawah container,
+       bukan mengikuti tinggi/ukuran device */
+    .bottom-navigation-bio,
+    .page-navigation-bio {
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 10px !important;
+        top: auto !important;
+
+        width: 100% !important;
+        height: 70px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        z-index: 999 !important;
+    }
+
+    /* HOME — tetap */
+    .moirs-home,
+    .mamah-page .moirs-home,
+    .mbak-page .moirs-home,
+    .abang-page .moirs-home {
+        position: absolute !important;
+
+        width: 55px !important;
+        height: 55px !important;
+        min-width: 55px !important;
+        min-height: 55px !important;
+        max-width: 55px !important;
+        max-height: 55px !important;
+
+        left: 35px !important;
+        right: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    /* BACK / NEXT — tetap */
+    .nav-back-bio,
+    .mamah-page .nav-back-bio,
+    .mbak-page .nav-back-bio,
+    .abang-page .nav-back-bio {
+        position: absolute !important;
+
+        width: 55px !important;
+        height: 55px !important;
+        min-width: 55px !important;
+        min-height: 55px !important;
+        max-width: 55px !important;
+        max-height: 55px !important;
+
+        right: 35px !important;
+        left: auto !important;
+        top: 50% !important;
+        bottom: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+    }
+
+    /* Bentuk rumah tidak berubah ukuran */
+    .moirs-home .home-roof {
+        width: 32px !important;
+        height: 32px !important;
+        left: 11px !important;
+        top: 3px !important;
+    }
+
+    .moirs-home .home-body {
+        width: 36px !important;
+        height: 29px !important;
+        left: 9px !important;
+        top: 21px !important;
+    }
+
+    .moirs-home .home-door {
+        width: 9px !important;
+        height: 16px !important;
+        left: 23px !important;
+        top: 34px !important;
+    }
+
+    /* Panah tidak berubah ukuran */
+    .nav-back-bio span {
+        left: 8px !important;
+        top: 7px !important;
+
+        border-top: 21px solid transparent !important;
+        border-bottom: 21px solid transparent !important;
+        border-right: 31px solid var(--orange) !important;
+    }
+}
+
+/* HP kecil: ukuran DAN posisi horizontal tetap sama */
+@media (max-width: 400px) {
+    .bottom-navigation-bio,
+    .page-navigation-bio {
+        height: 70px !important;
+        bottom: 10px !important;
+    }
+
+    .moirs-home,
+    .mamah-page .moirs-home,
+    .mbak-page .moirs-home,
+    .abang-page .moirs-home {
+        width: 55px !important;
+        height: 55px !important;
+        left: 35px !important;
+    }
+
+    .nav-back-bio,
+    .mamah-page .nav-back-bio,
+    .mbak-page .nav-back-bio,
+    .abang-page .nav-back-bio {
+        width: 55px !important;
+        height: 55px !important;
+        right: 35px !important;
+    }
+}
+
+
+
+/* =========================================================
+   FIX PAGE NAVIGATION BIO
+   Dibuat sama seperti .page-navigation
+========================================================= */
+
+.page-navigation-bio {
+    width: 88% !important;
+    max-width: 900px !important;
+
+    margin: 0 auto 35px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    z-index: 10 !important;
+}
+
+/* Jangan ubah page-navigation-bio menjadi absolute di mobile */
+@media (max-width: 768px) {
+    .page-navigation-bio {
+        width: 88% !important;
+        max-width: 900px !important;
+
+        margin: 0 auto 35px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        height: auto !important;
+
+        z-index: 10 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-navigation-bio {
+        width: 88% !important;
+        max-width: 900px !important;
+        margin: 0 auto 35px !important;
+        position: relative !important;
+        height: auto !important;
+        bottom: auto !important;
+    }
+}
+
+
+
+/* =========================================================
+   PAGE NAVIGATION BIO — BLUE BUTTONS
+   Home dan Next/Back dibuat biru.
+========================================================= */
+
+/* HOME */
+.page-navigation-bio .moirs-home .home-roof,
+.page-navigation-bio .moirs-home .home-body {
+    background: var(--blue) !important;
+}
+
+/* pintu rumah dibuat putih supaya tetap terlihat */
+.page-navigation-bio .moirs-home .home-door {
+    background: var(--white) !important;
+}
+
+/* BACK / NEXT */
+.page-navigation-bio .nav-back-bio span {
+    border-right-color: var(--blue) !important;
+}
+
+/* Jika ada tombol next khusus di page-navigation-bio */
+.page-navigation-bio .nav-next span {
+    border-left-color: var(--blue) !important;
+}
