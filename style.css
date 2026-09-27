@@ -6,6 +6,7 @@
     --blue: #004aad;
     --orange: #fc9144;
     --white: #ffffff;
+    --black: #040303;
 
 }
 
@@ -1466,7 +1467,7 @@ body {
     left: 11px;
     top: 3px;
 
-    background: #fc9144;
+    background: #000000;
 
     transform: rotate(45deg);
 
@@ -1485,7 +1486,7 @@ body {
     left: 9px;
     top: 21px;
 
-    background: #fc9144;
+    background: #000000;
 
     border-radius: 3px;
 }
@@ -1878,7 +1879,7 @@ LISTEN CLOSELY
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
 
-    border-left: 31px solid var(--orange);
+    border-left: 31px solid var(--black);
 
     pointer-events: none;
 
@@ -1899,7 +1900,7 @@ LISTEN CLOSELY
 .nav-next:hover span {
     filter:
         drop-shadow(
-            0 0 6px rgba(252, 145, 68, 0.7)
+            0 0 6px rgba(0, 0, 0, 0.7)
         );
 }
 
@@ -1959,7 +1960,7 @@ LISTEN CLOSELY
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
 
-    border-right: 31px solid var(--orange);
+    border-right: 31px solid var(--black);
 
     pointer-events: none;
 
@@ -1980,7 +1981,7 @@ LISTEN CLOSELY
 .nav-back:hover span {
     filter:
         drop-shadow(
-            0 0 6px rgba(252, 145, 68, 0.7)
+            0 0 6px rgba(5, 4, 3, 0.7)
         );
 }
 
@@ -2039,7 +2040,7 @@ LISTEN CLOSELY
     left: 11px;
     top: 3px;
 
-    background: #fc9144;
+    background: #000000;
 
     transform: rotate(45deg);
 
@@ -2058,7 +2059,7 @@ LISTEN CLOSELY
     left: 9px;
     top: 21px;
 
-    background: #fc9144;
+    background: #000000;
 
     border-radius: 3px;
 }
@@ -2449,7 +2450,7 @@ LISTEN CLOSELY
     left: 11px;
     top: 3px;
 
-    background: #fc9144;
+    background: #000000;
 
     transform: rotate(45deg);
 
@@ -2468,7 +2469,7 @@ LISTEN CLOSELY
     left: 9px;
     top: 21px;
 
-    background: #fc9144;
+    background: #000000;
 
     border-radius: 3px;
 }
@@ -2687,7 +2688,7 @@ LISTEN CLOSELY
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
 
-    border-right: 31px solid var(--orange);
+    border-right: 31px solid var(--black);
 
     pointer-events: none;
 
@@ -2708,7 +2709,7 @@ LISTEN CLOSELY
 .nav-back-bio:hover span {
     filter:
         drop-shadow(
-            0 0 6px rgba(252, 145, 68, 0.7)
+            0 0 6px rgba(2, 1, 1, 0.7)
         );
 }
 
@@ -2995,7 +2996,7 @@ LISTEN CLOSELY
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
 
-    border-right: 31px solid var(--orange);
+    border-right: 31px solid var(--black);
 
     pointer-events: none;
 
@@ -3016,7 +3017,7 @@ LISTEN CLOSELY
 .nav-back-bio:hover span {
     filter:
         drop-shadow(
-            0 0 6px rgba(252, 145, 68, 0.7)
+            0 0 6px rgba(0, 0, 0, 0.7)
         );
 }
 
@@ -3354,7 +3355,7 @@ LISTEN CLOSELY
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
 
-    border-right: 31px solid var(--orange);
+    border-right: 31px solid var(--black);
 
     pointer-events: none;
 
@@ -3375,7 +3376,7 @@ LISTEN CLOSELY
 .nav-back-bio:hover span {
     filter:
         drop-shadow(
-            0 0 6px rgba(252, 145, 68, 0.7)
+            0 0 6px rgba(0, 0, 0, 0.7)
         );
 }
 
@@ -5584,8 +5585,6 @@ img {
 /* =========================================================
    FIX NAVIGATION DETAIL PAGES — UKURAN TETAP
    Mbak Manda / Mamah Talia / Abang Bara
-   Dibuat seperti navigation Listen Closely:
-   ukuran tombol tidak mengecil/membesar mengikuti device.
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -5690,8 +5689,6 @@ img {
 
 /* =========================================================
    FIX NAVIGATION VISIBILITY — DETAIL PAGES
-   Mbak Manda / Mamah Talia / Abang Bara
-   Tombol dibuat tetap 55x55 dan dipastikan selalu terlihat.
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -5817,7 +5814,7 @@ img {
 
         border-top: 21px solid transparent !important;
         border-bottom: 21px solid transparent !important;
-        border-right: 31px solid var(--orange) !important;
+        border-right: 31px solid var(--black) !important;
     }
 }
 
@@ -5851,9 +5848,7 @@ img {
 
 
 /* =========================================================
-   FIX PAGE NAVIGATION BIO
-   Dibuat sama seperti .page-navigation
-========================================================= */
+   FIX PAGE NAVIGATION BIO========================================================= */
 
 .page-navigation-bio {
     width: 88% !important;
@@ -5877,7 +5872,6 @@ img {
     z-index: 10 !important;
 }
 
-/* Jangan ubah page-navigation-bio menjadi absolute di mobile */
 @media (max-width: 768px) {
     .page-navigation-bio {
         width: 88% !important;
@@ -5916,37 +5910,33 @@ img {
 
 
 /* =========================================================
-   PAGE NAVIGATION BIO — BLUE BUTTONS
-   Home dan Next/Back dibuat biru.
-========================================================= */
+   PAGE NAVIGATION BIO — BLUE BUTTONS========================================================= */
 
 /* HOME */
 .page-navigation-bio .moirs-home .home-roof,
 .page-navigation-bio .moirs-home .home-body {
-    background: var(--blue) !important;
+    background: var(--black) !important;
 }
 
 /* pintu rumah dibuat putih supaya tetap terlihat */
 .page-navigation-bio .moirs-home .home-door {
-    background: var(--white) !important;
+    background: var(--black) !important;
 }
 
 /* BACK / NEXT */
 .page-navigation-bio .nav-back-bio span {
-    border-right-color: var(--blue) !important;
+    border-right-color: var(--black) !important;
 }
 
 /* Jika ada tombol next khusus di page-navigation-bio */
 .page-navigation-bio .nav-next span {
-    border-left-color: var(--blue) !important;
+    border-left-color: var(--black) !important;
 }
 
 
 
 /* =========================================================
-   PAGE NAVIGATION BIO — SMALLER BUTTON + DEGUM EFFECT
-   Home dan Next/Back dibuat lebih kecil, pendek, dan
-   memberi efek "degum" saat diklik.
+   PAGE NAVIGATION BIO 
 ========================================================= */
 
 /* Area navigasi dibuat lebih pendek */
@@ -6003,7 +5993,7 @@ img {
     top: 6px !important;
     border-top: 16px solid transparent !important;
     border-bottom: 16px solid transparent !important;
-    border-right: 24px solid var(--blue) !important;
+    border-right: 24px solid var(--black) !important;
 }
 
 /* Panah next diperkecil */
@@ -6012,7 +6002,7 @@ img {
     top: 6px !important;
     border-top: 16px solid transparent !important;
     border-bottom: 16px solid transparent !important;
-    border-left: 24px solid var(--blue) !important;
+    border-left: 24px solid var(--black) !important;
 }
 
 /* Efek degum */
@@ -6066,4 +6056,139 @@ img {
         width: 44px !important;
         height: 44px !important;
     }
+}
+
+/* =========================================================
+   FINAL FIX — HOME / NEXT ONLY
+   ========================================================= */
+
+/* Memoirs Biography HOME: keep original desktop position on all breakpoints */
+.biography-home {
+    width: 55px !important;
+    height: 55px !important;
+
+    position: absolute !important;
+
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: -30px !important;
+
+    margin: 0 !important;
+    justify-self: auto !important;
+
+    transform: translateX(-50%) !important;
+}
+
+.biography-home:hover {
+    transform: translateX(-50%) translateY(-5px) scale(1.05) !important;
+}
+
+/* ALL HOME BUTTONS — BLACK */
+.home-roof,
+.home-body,
+.home-door {
+    background: #000000 !important;
+}
+
+/* ALL NEXT BUTTONS — BLACK */
+.nav-next span,
+.page-navigation-bio .nav-next span {
+    border-left-color: #000000 !important;
+}
+
+/* =========================================================
+   FINAL SIZE FIX — ALL HOME / NEXT SMALL
+   Only changes Home and Next button sizes.
+   ========================================================= */
+
+/* ALL HOME BUTTON CONTAINERS — SMALL */
+.echoed-home,
+.listen-home,
+.biography-home,
+.moirs-home,
+.page-navigation-bio .moirs-home {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+/* ALL HOME ICON PARTS — SMALL */
+.home-roof,
+.page-navigation-bio .moirs-home .home-roof {
+    width: 23px !important;
+    height: 23px !important;
+    left: 8px !important;
+    top: 2px !important;
+}
+
+.home-body,
+.page-navigation-bio .moirs-home .home-body {
+    width: 26px !important;
+    height: 21px !important;
+    left: 7px !important;
+    top: 16px !important;
+}
+
+.home-door,
+.page-navigation-bio .moirs-home .home-door {
+    width: 6px !important;
+    height: 12px !important;
+    left: 17px !important;
+    top: 25px !important;
+}
+
+/* ALL NEXT BUTTONS — SMALL */
+.nav-next,
+.page-navigation-bio .nav-next {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+/* ALL NEXT TRIANGLES — SMALL */
+.nav-next span,
+.page-navigation-bio .nav-next span {
+    left: 8px !important;
+    top: 5px !important;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important;
+    border-left: 22px solid #000000 !important;
+}
+
+
+/* =========================================================
+   FINAL SIZE FIX — ALL BACK SMALL
+   Only changes Back button sizes to match Home / Next.
+   ========================================================= */
+
+/* ALL BACK BUTTONS — SMALL */
+.nav-back,
+.nav-back-bio,
+.page-navigation-bio .nav-back-bio,
+.bottom-navigation .nav-back {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+/* ALL BACK TRIANGLES — SMALL */
+.nav-back span,
+.nav-back-bio span,
+.page-navigation-bio .nav-back-bio span,
+.bottom-navigation .nav-back span {
+    left: 8px !important;
+    top: 5px !important;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important;
+    border-right: 22px solid #000000 !important;
 }
