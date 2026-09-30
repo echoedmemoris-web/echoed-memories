@@ -5843,7 +5843,6 @@ img {
         transform: translateY(-50%) scale(1.03) !important;
     }
 
-    /* dekorasi dibatasi supaya tidak menutupi tulisan */
     .love-decoration-bio,
     .love-decoration-bio1,
     .love-decoration-bio2,
@@ -6439,7 +6438,6 @@ img {
         top: 34px !important;
     }
 
-    /* Panah tidak berubah ukuran */
     .nav-back-bio span {
         left: 8px !important;
         top: 7px !important;
@@ -6776,9 +6774,8 @@ img {
 
 
 /* =========================================================
-   FINAL SIZE FIX — ALL BACK SMALL   ========================================================= */
-
-/* ALL BACK BUTTONS — SMALL */
+   FINAL SIZE FIX — ALL BACK SMALL   
+   ========================================================= */
 .nav-back,
 .nav-back-bio,
 .page-navigation-bio .nav-back-bio,
@@ -6806,13 +6803,10 @@ img {
 /* =========================================================
    FINAL FIX — THE ANSWERS HOME FIXED POSITION
    ========================================================= */
-
-/* Parent tombol Home tetap menjadi acuan posisinya */
 .answers-background {
     position: relative !important;
 }
 
-/* Home The Answers — selalu di tengah dan tetap pada posisi yang sama */
 .answers-home {
     width: 40px !important;
     height: 40px !important;
@@ -6841,7 +6835,6 @@ img {
     transform: translateX(-50%) translateY(-4px) scale(1.05) !important;
 }
 
-/* Jangan ubah posisi/ukuran saat device mengecil */
 @media (max-width: 900px) {
     .answers-home {
         width: 40px !important;
@@ -6888,7 +6881,6 @@ img {
 
 /* =========================================================
    FINAL FIX — THE ANSWERS CARDS / BOXES LOCKED
-   Ukuran dan posisi card tetap sama di semua ukuran device.
    ========================================================= */
 
 /* Area answers tetap menjadi acuan; jika layar sempit,
@@ -7020,7 +7012,6 @@ img {
 
 /* =========================================================
    FINAL SPACING FIX — THE ANSWERS
-   Tambah jarak card dari tepi background tanpa mengubah ukuran card.
    ========================================================= */
 .answers-background {
     padding-left: 36px !important;
@@ -7031,4 +7022,85 @@ img {
 .answers-boxes {
     padding-top: 48px !important;
     padding-bottom: 120px !important;
+}
+
+/* =========================================================
+   FINAL FIX — THE ANSWERS
+   ========================================================= */
+.answers-boxes > .answer-card > p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+.answers-boxes {
+    width: 934px !important;
+    min-width: 934px !important;
+    max-width: 934px !important;
+    grid-template-columns: 420px 500px !important;
+    column-gap: 14px !important;
+}
+
+.answers-home {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+
+    position: sticky !important;
+    left: calc(50% - 20px) !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    margin-top: -90px !important;
+    margin-right: 0 !important;
+    margin-bottom: 30px !important;
+    margin-left: calc(50% - 20px) !important;
+
+    transform: none !important;
+    transform-origin: center center !important;
+    display: block !important;
+    z-index: 50 !important;
+}
+
+.answers-home:hover {
+    transform: translateY(-4px) scale(1.05) !important;
+}
+
+/* Mobile: kolom kanan dibuat lebih sempit agar tidak terlalu panjang ke kanan */
+@media (max-width: 600px) {
+    .answers-background {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .answers-boxes {
+        width: 884px !important;
+        min-width: 884px !important;
+        max-width: 884px !important;
+        grid-template-columns: 420px 450px !important;
+        column-gap: 14px !important;
+    }
+
+    .answers-boxes > .answer-card > p {
+        text-align: justify !important;
+        text-justify: inter-word !important;
+    }
+
+    .answers-home {
+        position: sticky !important;
+        left: calc(50% - 20px) !important;
+        margin-left: calc(50% - 20px) !important;
+        margin-top: -90px !important;
+        margin-bottom: 30px !important;
+        transform: none !important;
+    }
+
+    .answers-home:hover {
+        transform: translateY(-4px) scale(1.05) !important;
+    }
 }
