@@ -3409,6 +3409,691 @@ LISTEN CLOSELY
     margin-bottom: 10px;
 }
 
+
+/* =========================================
+   THE ANSWERS PAGE
+========================================= */
+
+.answers-page {
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #fc9144;
+
+    color: #ffffff;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.answers-header {
+
+    width: calc(100% - 110px);
+
+    min-height: 185px;
+
+    margin: 48px auto 20px;
+
+    background: #004aad;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 25px 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* TITLE */
+
+.answers-title {
+
+    font-family: "Kindergarten", cursive;
+
+    font-size: 76px;
+
+    line-height: 0.92;
+
+    color: #fc9144;
+
+    text-shadow:
+        3px 3px 0 #000000;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================================
+   BACKGROUND AREA
+========================================= */
+
+.answers-background {
+
+    width: calc(100% - 115px);
+
+    min-height: 1450px;
+
+    margin: 0 auto 35px;
+
+    border-radius: 35px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 255, 255, 0.18)
+        ),
+        url("images/answers-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ANSWERS BOX CONTAINER
+========================================= */
+
+.answers-boxes {
+
+    width: 92%;
+
+    margin: 0 auto;
+
+    padding: 40px 0 100px;
+
+    position: relative;
+
+    z-index: 5;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.35fr;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   ANSWER CARD
+========================================= */
+
+.answer-card {
+
+    background: rgba(0, 74, 173, 0.88);
+
+    border-radius: 24px;
+
+    padding: 15px 18px 18px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 3px 7px rgba(0,0,0,0.12);
+
+    backdrop-filter: blur(1px);
+
+    -webkit-backdrop-filter: blur(1px);
+
+    align-self: start;
+}
+
+
+/* =========================================
+   QUESTION
+========================================= */
+
+.answer-card h3 {
+
+    margin: 0 0 18px;
+
+    font-family: "Kindergarten", cursive;
+
+    font-size: 22px;
+
+    line-height: 1.05;
+
+    font-weight: normal;
+
+    text-align: center;
+
+    color: #fc9144;
+
+    text-shadow:
+        1px 1px 0 rgba(0,0,0,0.25);
+}
+
+
+/* =========================================
+   ANSWER
+========================================= */
+
+.answer-card p {
+
+    margin: 0;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.12;
+
+    color: #ffffff;
+
+    text-align: left;
+
+    white-space: normal;
+}
+
+
+/* =========================================
+   CARD POSITIONING
+========================================= */
+
+/*
+    Kolom kiri
+*/
+
+.answer-card:nth-child(1) {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+}
+
+
+.answer-card:nth-child(3) {
+
+    grid-column: 1;
+
+    grid-row: 2;
+
+}
+
+
+.answer-card:nth-child(5) {
+
+    grid-column: 1;
+
+    grid-row: 3;
+
+}
+
+
+.answer-card:nth-child(7) {
+
+    grid-column: 1;
+
+    grid-row: 4;
+
+}
+
+
+.answer-card:nth-child(9) {
+
+    grid-column: 1;
+
+    grid-row: 5;
+
+}
+
+
+.answer-card:nth-child(11) {
+
+    grid-column: 1;
+
+    grid-row: 6;
+
+}
+
+
+/*
+    Kolom kanan
+*/
+
+.answer-card:nth-child(2) {
+
+    grid-column: 2;
+
+    grid-row: 1 / span 2;
+
+}
+
+
+.answer-card:nth-child(4) {
+
+    grid-column: 2;
+
+    grid-row: 3;
+
+}
+
+
+.answer-card:nth-child(6) {
+
+    grid-column: 2;
+
+    grid-row: 4;
+
+}
+
+
+.answer-card:nth-child(8) {
+
+    grid-column: 2;
+
+    grid-row: 5;
+
+}
+
+
+.answer-card:nth-child(10) {
+
+    grid-column: 2;
+
+    grid-row: 6;
+
+}
+
+/* =========================================
+   Home
+========================================= */
+.answers-home {
+    width: 55px;
+    height: 55px;
+
+    margin-top: 55px;
+
+    position: relative;
+
+    display: block;
+
+    text-decoration: none;
+
+    filter:
+        drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+
+    transition: transform 0.25s ease;
+}
+
+
+/* HOME HOVER */
+
+.answers-home:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.answers-footer {
+
+    width: 100%;
+
+    min-height: 75px;
+
+    background: #004aad;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 15px 20px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    font-size: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .answers-header {
+
+        width: calc(100% - 50px);
+
+        min-height: 155px;
+
+        margin-top: 25px;
+
+        padding: 20px 25px;
+    }
+
+
+    .answers-title {
+
+        font-size: 60px;
+    }
+
+
+    .answers-logo {
+
+        width: 170px;
+
+        height: 85px;
+    }
+
+
+    .logo-text {
+
+        font-size: 34px;
+    }
+
+
+    .logo-memory {
+
+        font-size: 17px;
+    }
+
+
+    .answers-background {
+
+        width: calc(100% - 50px);
+
+        min-height: 1500px;
+
+        border-radius: 30px;
+    }
+
+
+    .answers-boxes {
+
+        width: 92%;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .answer-card h3 {
+
+        font-size: 19px;
+    }
+
+
+    .answer-card p {
+
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .answers-page {
+
+        background: #fc9144;
+    }
+
+
+    /* HEADER */
+
+    .answers-header {
+
+        width: calc(100% - 24px);
+
+        min-height: 125px;
+
+        margin: 18px auto 12px;
+
+        padding: 15px 18px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+
+    .answers-title {
+
+        font-size: 43px;
+
+        line-height: 0.9;
+
+        text-shadow:
+            2px 2px 0 #000000;
+    }
+
+
+    .answers-logo {
+
+        width: 115px;
+
+        height: 62px;
+
+        flex-shrink: 0;
+    }
+
+
+    .logo-text {
+
+        font-size: 25px;
+    }
+
+
+    .logo-memory {
+
+        font-size: 12px;
+
+        margin-left: 25px;
+    }
+
+
+    .logo-music {
+
+        left: 39px;
+
+        bottom: 5px;
+
+        font-size: 23px;
+    }
+
+
+    .logo-stars {
+
+        top: 4px;
+
+        left: 12px;
+
+        font-size: 11px;
+    }
+
+
+    .logo-stars.bottom {
+
+        bottom: 8px;
+
+        right: 12px;
+    }
+
+
+    /* BACKGROUND */
+
+    .answers-background {
+
+        width: calc(100% - 24px);
+
+        min-height: auto;
+
+        margin-bottom: 15px;
+
+        border-radius: 24px;
+
+        background-position: center;
+
+        padding-bottom: 80px;
+    }
+
+
+    /* BOXES */
+
+    .answers-boxes {
+
+        width: 90%;
+
+        padding: 20px 0 75px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    /* RESET GRID */
+
+    .answer-card:nth-child(1),
+    .answer-card:nth-child(2),
+    .answer-card:nth-child(3),
+    .answer-card:nth-child(4),
+    .answer-card:nth-child(5),
+    .answer-card:nth-child(6),
+    .answer-card:nth-child(7),
+    .answer-card:nth-child(8),
+    .answer-card:nth-child(9),
+    .answer-card:nth-child(10),
+    .answer-card:nth-child(11) {
+
+        grid-column: auto;
+
+        grid-row: auto;
+    }
+
+
+    /* CARD */
+
+    .answer-card {
+
+        width: 100%;
+
+        border-radius: 20px;
+
+        padding: 13px 15px 16px;
+    }
+
+
+    .answer-card h3 {
+
+        font-size: 19px;
+
+        line-height: 1.05;
+
+        margin-bottom: 13px;
+    }
+
+
+    .answer-card p {
+
+        font-size: 14px;
+
+        line-height: 1.16;
+    }
+ 
+
+    /* FOOTER */
+
+    .answers-footer {
+
+        min-height: 62px;
+
+        font-size: 15px;
+
+        padding: 12px 10px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .answers-title {
+
+        font-size: 36px;
+    }
+
+
+    .answers-logo {
+
+        width: 100px;
+
+        height: 55px;
+    }
+
+
+    .logo-text {
+
+        font-size: 22px;
+    }
+
+
+    .logo-memory {
+
+        font-size: 10px;
+    }
+
+
+    .answer-card h3 {
+
+        font-size: 17px;
+    }
+
+
+    .answer-card p {
+
+        font-size: 13px;
+    }
+
+}
+
 /* =========================================================
    FINAL RESPONSIVE SYSTEM
 ========================================================= */
@@ -3471,6 +4156,7 @@ img {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 }
+
 
 /* =========================================================
    TABLET + MOBILE
@@ -6115,4 +6801,234 @@ img {
     border-top: 15px solid transparent !important;
     border-bottom: 15px solid transparent !important;
     border-right: 22px solid #000000 !important;
+}
+
+/* =========================================================
+   FINAL FIX — THE ANSWERS HOME FIXED POSITION
+   ========================================================= */
+
+/* Parent tombol Home tetap menjadi acuan posisinya */
+.answers-background {
+    position: relative !important;
+}
+
+/* Home The Answers — selalu di tengah dan tetap pada posisi yang sama */
+.answers-home {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 30px !important;
+
+    margin: 0 !important;
+    display: block !important;
+
+    transform: translateX(-50%) !important;
+    transform-origin: center center !important;
+
+    text-decoration: none !important;
+    z-index: 30 !important;
+}
+
+.answers-home:hover {
+    transform: translateX(-50%) translateY(-4px) scale(1.05) !important;
+}
+
+/* Jangan ubah posisi/ukuran saat device mengecil */
+@media (max-width: 900px) {
+    .answers-home {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        max-width: 40px !important;
+        max-height: 40px !important;
+
+        position: absolute !important;
+        left: 50% !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: 30px !important;
+        margin: 0 !important;
+
+        transform: translateX(-50%) !important;
+    }
+
+    .answers-home:hover {
+        transform: translateX(-50%) translateY(-4px) scale(1.05) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .answers-home {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        max-width: 40px !important;
+        max-height: 40px !important;
+
+        position: absolute !important;
+        left: 50% !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: 30px !important;
+        margin: 0 !important;
+
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* =========================================================
+   FINAL FIX — THE ANSWERS CARDS / BOXES LOCKED
+   Ukuran dan posisi card tetap sama di semua ukuran device.
+   ========================================================= */
+
+/* Area answers tetap menjadi acuan; jika layar sempit,
+   layout card tidak berubah menjadi satu kolom. */
+.answers-background {
+    min-height: 1450px !important;
+    padding-bottom: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+}
+
+/* Kunci ukuran canvas card */
+.answers-boxes {
+    width: 1000px !important;
+    min-width: 1000px !important;
+    max-width: 1000px !important;
+
+    margin: 0 auto !important;
+    padding: 40px 0 110px !important;
+
+    display: grid !important;
+    grid-template-columns: 420px 566px !important;
+    column-gap: 14px !important;
+    row-gap: 14px !important;
+
+    align-items: stretch !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+/* Card utama saja — jangan mengubah image di dalam card */
+.answers-boxes > .answer-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    border-radius: 24px !important;
+    padding: 16px 20px 18px !important;
+    box-sizing: border-box !important;
+
+    align-self: stretch !important;
+}
+
+/* Ukuran teks card tetap sama di desktop/tablet/mobile */
+.answers-boxes > .answer-card > h3 {
+    font-size: 22px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 18px !important;
+}
+
+.answers-boxes > .answer-card > p {
+    font-size: 17px !important;
+    line-height: 1.12 !important;
+}
+
+/* Gambar poin di card 11 tetap rapi dan tidak ikut style box */
+.answers-boxes > .answer-card .answer-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 14px !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Kunci posisi tiap card supaya tidak berubah pada breakpoint */
+.answers-boxes > .answer-card:nth-child(1) {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(2) {
+    grid-column: 2 !important;
+    grid-row: 1 / span 2 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(3) {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(4) {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(5) {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(6) {
+    grid-column: 2 !important;
+    grid-row: 4 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(7) {
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(8) {
+    grid-column: 2 !important;
+    grid-row: 5 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(9) {
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(10) {
+    grid-column: 2 !important;
+    grid-row: 6 !important;
+}
+
+.answers-boxes > .answer-card:nth-child(11) {
+    grid-column: 1 !important;
+    grid-row: 6 !important;
+}
+
+/* =========================================================
+   FINAL SPACING FIX — THE ANSWERS
+   Tambah jarak card dari tepi background tanpa mengubah ukuran card.
+   ========================================================= */
+.answers-background {
+    padding-left: 36px !important;
+    padding-right: 36px !important;
+    box-sizing: border-box !important;
+}
+
+.answers-boxes {
+    padding-top: 48px !important;
+    padding-bottom: 120px !important;
 }
