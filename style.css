@@ -6883,8 +6883,6 @@ img {
    FINAL FIX — THE ANSWERS CARDS / BOXES LOCKED
    ========================================================= */
 
-/* Area answers tetap menjadi acuan; jika layar sempit,
-   layout card tidak berubah menjadi satu kolom. */
 .answers-background {
     min-height: 1450px !important;
     padding-bottom: 0 !important;
@@ -6892,7 +6890,6 @@ img {
     overflow-y: hidden !important;
 }
 
-/* Kunci ukuran canvas card */
 .answers-boxes {
     width: 1000px !important;
     min-width: 1000px !important;
@@ -6911,7 +6908,6 @@ img {
     z-index: 5 !important;
 }
 
-/* Card utama saja — jangan mengubah image di dalam card */
 .answers-boxes > .answer-card {
     width: 100% !important;
     min-width: 0 !important;
@@ -6924,7 +6920,6 @@ img {
     align-self: stretch !important;
 }
 
-/* Ukuran teks card tetap sama di desktop/tablet/mobile */
 .answers-boxes > .answer-card > h3 {
     font-size: 22px !important;
     line-height: 1.05 !important;
@@ -6936,7 +6931,6 @@ img {
     line-height: 1.12 !important;
 }
 
-/* Gambar poin di card 11 tetap rapi dan tidak ikut style box */
 .answers-boxes > .answer-card .answer-card {
     width: 100% !important;
     max-width: 100% !important;
@@ -6954,7 +6948,6 @@ img {
     -webkit-backdrop-filter: none !important;
 }
 
-/* Kunci posisi tiap card supaya tidak berubah pada breakpoint */
 .answers-boxes > .answer-card:nth-child(1) {
     grid-column: 1 !important;
     grid-row: 1 !important;
@@ -7071,7 +7064,6 @@ img {
     transform: translateY(-4px) scale(1.05) !important;
 }
 
-/* Mobile: kolom kanan dibuat lebih sempit agar tidak terlalu panjang ke kanan */
 @media (max-width: 600px) {
     .answers-background {
         padding-left: 18px !important;
@@ -7107,8 +7099,6 @@ img {
 
 /* =========================================================
    FINAL MOBILE FIT FIX — THE ANSWERS
-   Dua kolom tetap dipertahankan, tetapi seluruh layout
-   mengecil agar muat di layar HP tanpa horizontal scroll.
    ========================================================= */
 @media (max-width: 600px) {
 
